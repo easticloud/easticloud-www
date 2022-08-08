@@ -1,8 +1,8 @@
-import {description} from './project.json'
+import { description, title } from "./settings";
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: "东云科技",
+        title,
         htmlAttrs: {
             lang: "zh-CN",
         },
@@ -16,7 +16,7 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ["element-ui/lib/theme-chalk/index.css",'csslab/reset.css'],
+    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: ["@/plugins/element-ui"],
