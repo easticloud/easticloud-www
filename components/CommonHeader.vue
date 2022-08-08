@@ -1,5 +1,5 @@
 <template>
-    <div class="c-header">
+    <div class="c-header" :class="'theme-' + kv_mode">
         <div class="wp">
             <div class="c-header-left">
                 <a class="c-header-logo" href="/">
@@ -14,7 +14,9 @@
             </div>
             <div class="c-header-right">
                 <a href="#" class="u-btn u-lang">简</a>
-                <a href="#" class="u-btn u-search"><img src="~assets/img/search.svg" alt="搜索" /></a>
+                <a href="#" class="u-btn u-search">
+                    <i class="u-icon el-icon-search"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -36,6 +38,11 @@ export default {
     },
     async asyncData({ params }) {
         return {};
+    },
+    computed: {
+        kv_mode: function () {
+            return this.$store.state.home.kv_mode;
+        },
     },
 };
 </script>
@@ -68,7 +75,6 @@ export default {
     .u-link {
         .pr;
         .fz(16px);
-        .color(rgba(255,255,255,.8));
         margin-right: 30px;
         padding: 10px 0;
         &:hover,
@@ -81,20 +87,12 @@ export default {
                 .r(2px);
             }
         }
-        &:hover {
-            color:#fff;
-            &::after {
-                background-color: rgba(255,255,255,.8);
-            }
-        }
     }
 }
 .c-header-right {
     .flex;
     gap: 20px;
     .u-btn {
-        color: rgba(255,255,255,.8);
-        border: 1px solid rgba(255,255,255,.8);
         .size(32px);
         .db;
         .x;
@@ -107,9 +105,44 @@ export default {
             .db;
             .size(18px);
         }
-        &:hover {
-            color:#fff;
+    }
+}
+.c-header-theme(@color,@hover) {
+
+    *{
+        transition:0.1s ease-in-out;
+    }
+    .c-header-nav {
+        .u-link {
+            .color(@color);
+
+            &:hover {
+                color: @hover;
+                &::after {
+                    background-color: @color;
+                }
+            }
         }
     }
+    .c-header-right {
+        .u-btn {
+            color: @color;
+            border: 1px solid @color;
+
+            &:hover {
+                color: @hover;
+            }
+        }
+    }
+}
+.c-header.theme-dark {
+    @color:rgba(255,255,255,0.8);
+    @hover: #fff;
+    .c-header-theme(@color,@hover);
+}
+.c-header.theme-light {
+    @color:rgba(0,0,0,0.8);
+    @hover: #000;
+    .c-header-theme(@color,@hover);
 }
 </style>
