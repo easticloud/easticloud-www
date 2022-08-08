@@ -10,6 +10,9 @@
 
         <!-- 3.产品服务 -->
         <index-production></index-production>
+
+        <!-- 4.解决方案 -->
+        <index-solution></index-solution>
     </div>
 </template>
 
