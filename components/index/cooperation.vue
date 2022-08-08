@@ -10,6 +10,9 @@
                     <img :src="item.image" alt="" />
                 </div>
             </div>
+            <div class="m-cooperation-footer">
+                点击查看更多
+            </div>
         </div>
     </div>
 </template>

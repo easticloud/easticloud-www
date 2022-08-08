@@ -22,6 +22,9 @@
 
         <!-- 7.合作伙伴 -->
         <index-cooperation></index-cooperation>
+
+        <!-- 8.公共底部 -->
+        <common-footer></common-footer>
     </div>
 </template>
 
