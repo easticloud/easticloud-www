@@ -3,23 +3,18 @@
         <div class="wp">
             <div class="c-header-left">
                 <a class="c-header-logo" href="/">
-                    <img class="u-logo" src="@/assets/img/logo.svg" svg-inlne alt="东云科技" />
+                    <img class="u-logo" src="../assets/img/logo.svg" alt="东云科技" />
+                    <!-- <component :is="require(`../assets/img/header-logo.svg?inline`)" fill="#ffffff" /> -->
                 </a>
                 <div class="c-header-nav">
-                    <a
-                        class="u-link"
-                        :class="{ active: active == i }"
-                        :href="item.href"
-                        :target="item.target"
-                        v-for="(item, i) in nav"
-                        :key="i"
-                        >{{ item.label }}</a
-                    >
+                    <nuxt-link class="u-link" :to="item.href" v-for="(item, i) in data" :key="i">{{
+                        item.label
+                    }}</nuxt-link>
                 </div>
             </div>
             <div class="c-header-right">
                 <a href="#" class="u-btn u-lang">简</a>
-                <a href="#" class="u-btn u-search"><img class="u-logo" src="~assets/img/search.svg" alt="搜索" /></a>
+                <a href="#" class="u-btn u-search"><img src="~assets/img/search.svg" alt="搜索" /></a>
             </div>
         </div>
     </div>
@@ -28,7 +23,16 @@
 <script>
 export default {
     data() {
-        return {};
+        return {
+            data: [
+                { label: "产品服务", href: "" },
+                { label: "解决方案", href: "" },
+                { label: "最新动态", href: "" },
+                { label: "合作伙伴", href: "" },
+                { label: "联系我们", href: "" },
+                { label: "关于我们", href: "" },
+            ],
+        };
     },
     async asyncData({ params }) {
         return {};
@@ -38,7 +42,10 @@ export default {
 
 <style scoped lang="less">
 .c-header {
-    background-color: #080e1a;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    .w(100%);
     .wp {
         .h(90px);
         display: flex;
@@ -61,7 +68,7 @@ export default {
     .u-link {
         .pr;
         .fz(16px);
-        .color(#fff);
+        .color(rgba(255,255,255,.8));
         margin-right: 30px;
         padding: 10px 0;
         &:hover,
@@ -75,13 +82,9 @@ export default {
             }
         }
         &:hover {
+            color:#fff;
             &::after {
-                background-color: #fff;
-            }
-        }
-        &.active {
-            &::after {
-                background-color: #295efd;
+                background-color: rgba(255,255,255,.8);
             }
         }
     }
@@ -90,9 +93,8 @@ export default {
     .flex;
     gap: 20px;
     .u-btn {
-        background-color: #295efd;
-        color: #fff;
-        border-color: #295efd;
+        color: rgba(255,255,255,.8);
+        border: 1px solid rgba(255,255,255,.8);
         .size(32px);
         .db;
         .x;
@@ -106,7 +108,7 @@ export default {
             .size(18px);
         }
         &:hover {
-            filter: brightness(120%);
+            color:#fff;
         }
     }
 }

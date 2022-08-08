@@ -2,7 +2,7 @@
     <div class="p-index">
         <!-- 1.顶部kv -->
         <client-only>
-            <Kv />
+            <index-kv></index-kv>
         </client-only>
 
         <!-- 2.公共头部 -->
@@ -15,3 +15,7 @@ export default {
     name: "IndexPage",
 };
 </script>
+
+<style lang="less">
+@import "~@/assets/css/index.less";
+</style>
