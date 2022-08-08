@@ -13,6 +13,12 @@
 
         <!-- 4.解决方案 -->
         <index-solution></index-solution>
+
+        <!-- 5.数据中心 -->
+        <index-datacenter></index-datacenter>
+
+        <!-- 6.资质认证 -->
+        <index-certification></index-certification>
     </div>
 </template>
 
