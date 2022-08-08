@@ -20,6 +20,9 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "csslab": "^4.0.3"
+    "@nuxtjs/style-resources": "^1.2.1",
+    "csslab": "^4.0.3",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0"
   }
 }

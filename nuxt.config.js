@@ -17,15 +17,16 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css"],
+    buildModules: ["@nuxtjs/style-resources"],
+    styleResources: {
+        less: ["csslab/base.less","./assets/css/var.less"],
+    },
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: ["@/plugins/element-ui"],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
-
-    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [],
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [],
