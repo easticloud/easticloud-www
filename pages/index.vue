@@ -19,6 +19,9 @@
 
         <!-- 6.资质认证 -->
         <index-certification></index-certification>
+
+        <!-- 7.合作伙伴 -->
+        <index-cooperation></index-cooperation>
     </div>
 </template>
 
