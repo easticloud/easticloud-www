@@ -7,6 +7,9 @@
 
         <!-- 2.公共头部 -->
         <common-header></common-header>
+
+        <!-- 3.产品服务 -->
+        <index-production></index-production>
     </div>
 </template>
 
