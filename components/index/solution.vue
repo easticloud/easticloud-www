@@ -6,7 +6,24 @@
                 <img class="u-logo" src="@/assets/img/icon.svg" alt="东云科技" />
             </h3>
             <div class="m-solution-content">
-
+                <div class="m-tabs">
+                    <span
+                        class="u-tabs"
+                        v-for="(item, key) in tabs"
+                        :key="item.value"
+                        :class="tabIndex == key ? 'active' : ''"
+                        @click="changeTab(item.value)"
+                        >{{ item.name }}</span
+                    >
+                </div>
+                <div class="u-solution">
+                    <img class="u-img" :src="solutions.src" :alt="solutions.title" />
+                    <div class="u-info">
+                        <span class="u-title">{{ solutions.title }}</span>
+                        <span class="u-desc">{{ solutions.desc }}</span>
+                        <span><a class="u-more" :href="solutions.href" target="_blank">了解详情</a></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -15,6 +32,11 @@
 export default {
     data() {
         return {
+            tabIndex: 0,
+            tabs: [
+                { name: "混合云解决方案", value: 0 },
+                { name: "Tiktok解决方案", value: 1 },
+            ],
             data: [
                 {
                     title: "混合云解决方案",
@@ -23,7 +45,7 @@ export default {
                     src: "/images/index/solution/1.png",
                 },
                 {
-                    title: "抖音国际版Tiktok",
+                    title: "Tiktok解决方案",
                     desc: "抖音国际版Tiktok在全球深受欢迎，成为国际上下载量最多的APP之一。由简入深，针对浏览客户、运营客户以及企业高端客户都有完整配套解决方案，解决个人/企业Tiktok问题。",
                     href: "",
                     src: "/images/index/solution/2.png",
@@ -34,11 +56,82 @@ export default {
     async asyncData({ params }) {
         return {};
     },
+    computed: {
+        solutions() {
+            return this.data[this.tabIndex];
+        },
+    },
+    methods: {
+        changeTab(i) {
+            this.tabIndex = i;
+            console.log(this.tabIndex);
+        },
+    },
 };
 </script>
 
 <style lang="less">
 .m-solution {
     padding: 60px 0;
+    .m-solution-content {
+        .m-tabs {
+            .mt(50px);
+            .flex;
+            .fz(18px,1.2);
+            .u-tabs {
+                .pr;
+                .pointer;
+                padding: 0 26px;
+                &::before {
+                    content: "";
+                    .pa;
+                    .lb(0,-16px);
+                    .size(100%,2px);
+                    background: #e1e6f1;
+                }
+                &.active {
+                    .color(#4162eb);
+                    &:before {
+                        background: #4162eb;
+                    }
+                }
+            }
+            .u-tabs + .u-tabs {
+                border-left: 1px solid #e1e6f1;
+            }
+        }
+        .u-solution {
+            .flex;
+            .mt(70px);
+            gap: 40px;
+            .u-img {
+                .w(360px);
+                flex-shrink: 0;
+            }
+            .u-info {
+                .flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                .u-title {
+                    .fz(24px);
+                    .bold;
+                }
+                .u-desc {
+                    letter-spacing: 1px;
+                    .fz(16px,2);
+                    .color(#7488a4);
+                }
+                .u-more {
+                    .dbi;
+                    .r(3px);
+                    .fz(16px);
+                    .color(#4162eb);
+                    padding: 5px 12px;
+                    border: 1px solid #4162eb;
+                }
+            }
+        }
+    }
 }
 </style>
