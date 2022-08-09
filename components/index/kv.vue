@@ -29,3 +29,11 @@ export default {
     },
 };
 </script>
+<style lang="less">
+.m-slider .el-carousel .el-carousel__item a {
+    .flex;
+    img {
+        .auto(x);
+    }
+}
+</style>
