@@ -3,8 +3,7 @@
         <div class="wp">
             <div class="c-header-left">
                 <a class="c-header-logo" href="/">
-                    <img class="u-logo" src="../assets/img/logo.svg" alt="东云科技" />
-                    <!-- <component :is="require(`../assets/img/header-logo.svg?inline`)" fill="#ffffff" /> -->
+                    <component :is="require(`../assets/img/logo.svg?inline`)" :fill="fill_color" />
                 </a>
                 <div class="c-header-nav">
                     <nuxt-link class="u-link" :to="item.href" v-for="(item, i) in data" :key="i">{{
@@ -43,6 +42,9 @@ export default {
         kv_mode: function () {
             return this.$store.state.home.kv_mode;
         },
+        fill_color : function (){
+            return this.kv_mode == 'dark' ? '#ffffff' : '#000000';
+        }
     },
 };
 </script>
@@ -65,18 +67,19 @@ export default {
     align-items: center;
 }
 .c-header-logo {
-    .u-logo {
-        .mr(40px);
-        .size(195px,43px);
-    }
+    .mr(40px);
+    // .u-logo {
+    //     .size(195px,43px);
+    // }
 }
 .c-header-nav {
     display: flex;
+    margin-top:10px;
     .u-link {
         .pr;
         .fz(16px);
-        margin-right: 30px;
-        padding: 10px 0;
+        margin-right: 20px;
+        padding: 10px;
         &:hover,
         &.active {
             &::after {

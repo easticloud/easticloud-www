@@ -6,9 +6,9 @@
                 <img class="u-logo" src="@/assets/img/icon.svg" alt="东云科技" />
             </h3>
             <div class="m-solution-content">
-                <div class="m-tabs">
+                <div class="u-tabs">
                     <span
-                        class="u-tabs"
+                        class="u-tab"
                         v-for="(item, key) in tabs"
                         :key="item.value"
                         :class="tabIndex == key ? 'active' : ''"
@@ -72,63 +72,68 @@ export default {
 
 <style lang="less">
 .m-solution {
-    padding: 60px 0;
-    .m-solution-content {
-        .m-tabs {
-            .mt(50px);
-            .flex;
-            .fz(18px,1.2);
-            .u-tabs {
-                .pr;
-                .pointer;
-                padding: 0 26px;
-                &::before {
-                    content: "";
-                    .pa;
-                    .lb(0,-16px);
-                    .size(100%,2px);
-                    background: #e1e6f1;
-                }
-                &.active {
-                    .color(#4162eb);
-                    &:before {
-                        background: #4162eb;
-                    }
-                }
+    padding: 60px 0 80px 0;
+}
+.m-solution-content {
+    .u-tabs {
+        .mt(20px);
+        .flex;
+        .fz(18px,1.2);
+        .u-tab {
+            .pr;
+            .pointer;
+            padding: 20px 26px;
+            &::before {
+                content: "";
+                .pa;
+                .lb(0,0);
+                .size(100%,2px);
+                background: #e1e6f1;
             }
-            .u-tabs + .u-tabs {
-                border-left: 1px solid #e1e6f1;
+            &.active {
+                .color(#4162eb);
+                &:before {
+                    background: #4162eb;
+                }
             }
         }
-        .u-solution {
+        .u-tabs + .u-tabs {
+            border-left: 1px solid #e1e6f1;
+        }
+    }
+    .u-solution {
+        .flex;
+        .mt(50px);
+        gap: 40px;
+        .u-img {
+            .w(360px);
+            flex-shrink: 0;
+        }
+        .u-info {
             .flex;
-            .mt(70px);
-            gap: 40px;
-            .u-img {
-                .w(360px);
-                flex-shrink: 0;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            .u-title {
+                .fz(24px);
+                .bold;
             }
-            .u-info {
-                .flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 10px;
-                .u-title {
-                    .fz(24px);
-                    .bold;
-                }
-                .u-desc {
-                    letter-spacing: 1px;
-                    .fz(16px,2);
-                    .color(#7488a4);
-                }
-                .u-more {
-                    .dbi;
-                    .r(3px);
-                    .fz(16px);
-                    .color(#4162eb);
-                    padding: 5px 12px;
-                    border: 1px solid #4162eb;
+            .u-desc {
+                letter-spacing: 1px;
+                .fz(16px,2);
+                .color(#7488a4);
+            }
+            .u-more {
+                @color:#4162eb;
+                .dbi;
+                .r(3px);
+                .fz(16px);
+                .color(@color);
+                padding: 5px 12px;
+                border: 1px solid @color;
+                &:hover{
+                    background-color: @color;
+                    color:#fff;
                 }
             }
         }

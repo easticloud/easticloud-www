@@ -64,13 +64,13 @@ export default {
         .m-area {
             .flex;
             justify-content: space-between;
-            .u-area { 
+            .u-area {
                 .fz(14px,28px);
                 b {
                     background: #4162eb;
                     padding: 2px 3px;
                     .r(3px);
-                    .mr(4px);
+                    .mr(10px);
                     .fz(16px,28px);
                     .color(#fff);
                 }

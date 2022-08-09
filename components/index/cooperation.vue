@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="m-cooperation-footer">
-                点击查看更多 →
+                <a href="" class="u-more">点击查看更多 →</a>
             </div>
         </div>
     </div>
@@ -74,6 +74,13 @@ export default {
     .pointer;
     .mt(25px);
     .lh(34px);
-    .color(#4162EB);
+
+    .u-more{
+        @color:#4162EB;
+        .color(@color);
+        &:hover{
+            box-shadow:0 1px 0 @color;
+        }
+    }
 }
 </style>

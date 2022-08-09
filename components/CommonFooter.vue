@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="c-footer-logo">
-                <img class="u-logo" src="@/assets/img/logo.svg" alt="东云科技" />
+                <img class="u-logo" src="@/assets/img/logo_origin.svg" alt="东云科技" />
                 <span class="u-name">江苏东云互联网络科技有限公司</span>
             </div>
         </div>
