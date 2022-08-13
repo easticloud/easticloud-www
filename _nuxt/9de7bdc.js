@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{401:function(n,t,o){},417:function(n,t,o){"use strict";o(401)},425:function(n,t,o){"use strict";o.r(t);var c={name:"ProductionCompute"},e=(o(417),o(51)),component=Object(e.a)(c,(function(){return(0,this._self._c)("div",[this._v("高性能计算")])}),[],!1,null,null,null);t.default=component.exports}}]);
