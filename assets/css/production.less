@@ -1,0 +1,177 @@
+.m-production {
+    padding: 0;
+    .wp {
+        max-width: 1200px;
+        .auto(x);
+    }
+    .c-header {
+        position: static;
+    }
+    .m-production-box {
+        .mt(50px);
+        padding: 60px 380px 60px 100px;
+        border: 1px dashed #666;
+        h2 {
+            .fz(36px,2);
+        }
+        .u-desc {
+            .color(#7488a4);
+            .fz(18px,2);
+        }
+        .m-btn {
+            .mt(20px);
+            .u-btn {
+                padding: 5px 20px;
+                border: 1px solid #4162eb;
+                .r(3px);
+                .mr(20px);
+                background-color: #4162eb;
+                color: #fff;
+                &.u-price {
+                    background-color: #fff;
+                    color: #4162eb;
+                }
+            }
+        }
+        &.m-container {
+            background: url(/static/images/index/production/container.png) center right #fff no-repeat;
+        }
+        &.m-servers {
+            background: url(/static/images/index/production/servers.png) center right #fff no-repeat;
+        }
+        &.m-compute {
+            background: url(/static/images/index/production/compute.png) center right #fff no-repeat;
+        }
+        &.m-international {
+            background: url(/static/images/index/production/tiktok.png) center right #fff no-repeat;
+            .u-desc {
+                .pt(30px);
+                &.u-first {
+                    .pr;
+                    &:after {
+                        content: "▼";
+                        .pa;
+                        .lb(140px,-16px);
+                        .size(20px);
+                        .color(#4162eb);
+                    }
+                }
+            }
+        }
+    }
+    .m-tabs {
+        .mt(50px);
+        border-bottom: 1px solid #e1e6f1;
+        .flex;
+        .u-tab {
+            .pr;
+            .size(200px,50px);
+            .fz(20px,50px);
+            .x;
+            .pointer;
+            &.active {
+                color: #4162eb;
+                &:after {
+                    content: "";
+                    .pa;
+                    .full;
+                    .lt(0);
+                    border-bottom: 1px solid #4162eb;
+                }
+            }
+        }
+    }
+    .m-info-box {
+        padding: 50px 0;
+        border-bottom: 1px solid #e1e6f1;
+        h3 {
+            .flex;
+            align-items: center;
+            .fz(36px,2);
+            .color(#374567 );
+            i {
+                .mr(10px);
+                .fz(20px);
+                .color(#4162eb);
+            }
+        }
+        .u-section {
+            .pt(10px);
+            strong {
+                .db;
+                .fz(20px,2);
+                .color(#374537);
+            }
+            span {
+                .fz(18px,2);
+                .color(#778ba6);
+            }
+        }
+    }
+    .m-goBack {
+        .lh(60px);
+        .h(60px);
+        .pb(30px);
+        .x;
+        a {
+            .fz(16px);
+            .color(#4162eb);
+        }
+    }
+    // tiktok
+    .m-getting {
+        .mt(20px);
+        .pb(50px);
+        border-bottom: 1px solid #e1e6f1;
+        .flex;
+        justify-content: center;
+        gap: 20px;
+        .u-input {
+            .lh(60px);
+            .fz(20px,60px);
+            .size(340px,60px);
+            padding: 0 10px;
+            border: 1px solid #e1e6f1;
+            .r(5px);
+        }
+        .u-btn {
+            .size(220px,60px);
+            background-color: #4162eb;
+            color: #fff;
+            .fz(20px,60px);
+            .x;
+            .r(5px);
+            &:hover {
+                filter: brightness(110%);
+            }
+        }
+    }
+    .m-info {
+        .pb(40px);
+        h3 {
+            .fz(36px,160px);
+            .x;
+            .color(#374567);
+        }
+        .m-box {
+            .flex;
+            justify-content: space-between;
+            .m-item {
+                .flex;
+                .u-img {
+                    .size(50px);
+                }
+                .u-txt {
+                    .flex;
+                    flex-direction: column;
+                    .fz(18px,2);
+                    .color(#778ba6);
+                    .u-title {
+                        .fz(20px);
+                        .color(#374567);
+                    }
+                }
+            }
+        }
+    }
+}
