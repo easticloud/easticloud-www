@@ -1,7 +1,7 @@
 <template>
-    <div class="m-production" id="top">
+    <div class="p-production" id="top">
+        <common-header class="theme-light"></common-header>
         <div class="wp">
-            <common-header class="theme-light"></common-header>
             <div class="m-production-box m-container">
                 <h2>Kubernetes 容器服务</h2>
                 <p class="u-desc">
@@ -66,7 +66,6 @@
                 <a href="#top">返回顶部 →</a>
             </div>
         </div>
-
         <common-footer></common-footer>
     </div>
 </template>

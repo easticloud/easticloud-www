@@ -1,5 +1,5 @@
 <template>
-    <div class="m-solution" id="top">
+    <div class="p-solution" id="top">
         <common-header class="theme-light"></common-header>
         <div class="m-header m-tiktok">
             <div class="wp">

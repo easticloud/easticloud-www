@@ -1,5 +1,5 @@
 <template>
-    <div class="m-production" id="top">
+    <div class="p-production" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
             <div class="m-production-box m-international">
