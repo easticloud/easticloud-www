@@ -38,10 +38,10 @@
         <div class="m-box wp" id="tab2">
             <h3>架构示例</h3>
             <div class="m-example">
-                <div class="m-imgBox">
+                <div class="m-img-box">
                     <img src="../../static/images/index/solution/cloud.png" alt="" />
                 </div>
-                <div class="m-infoBox">
+                <div class="m-info-box">
                     <h4 class="u-title">架构</h4>
                     <span class="u-item">
                         <i class="yellow"></i>
@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="m-goBack">
-            <a href="#top" >返回顶部 →</a>
+            <a href="#top">返回顶部 →</a>
         </div>
         <common-footer></common-footer>
     </div>
@@ -126,8 +126,8 @@ export default {
 @import "~@/assets/css/solution.less";
 </style>
 
-<style lang="less">
-.m-solution {
+<style scoped lang="less">
+.p-solution {
     h3 {
         .mb(30px);
     }
@@ -136,46 +136,46 @@ export default {
         align-items: center;
         justify-content: center;
         gap: 40px;
+    }
 
-        .m-imgBox {
-            flex-shrink: 0;
-            .w(710px);
-            .x;
-            .pr;
+    .m-img-box {
+        flex-shrink: 0;
+        .w(710px);
+        .x;
+        .pr;
+    }
+    .m-info-box {
+        .flex;
+        flex-direction: column;
+        gap: 20px;
+        .u-title {
+            .fz(24px,1);
         }
-        .m-infoBox {
+        .u-item {
             .flex;
-            flex-direction: column;
-            gap: 20px;
-            .u-title {
-                .fz(24px,1);
+            .fz(18px,2);
+            .color(#7488a4);
+            gap: 14px;
+            i {
+                flex-shrink: 0;
+                .size(16px);
+                .mt(10px);
+                .r(50%);
             }
-            .u-item {
-                .flex;
-                .fz(18px,2);
-                .color(#7488a4);
-                gap: 14px;
-                i {
-                    flex-shrink: 0;
-                    .size(16px);
-                    .mt(10px);
-                    .r(50%);
-                }
+
+            .yellow {
+                background-color: #ffe581;
+            }
+            .blue {
+                background-color: #a7b6f3;
+            }
+            .purple {
+                background-color: #e2c0fe;
+            }
+            .green {
+                background-color: #70dad4;
             }
         }
     }
-}
-
-.yellow {
-    background-color: #ffe581;
-}
-.blue {
-    background-color: #a7b6f3;
-}
-.purple {
-    background-color: #e2c0fe;
-}
-.green {
-    background-color: #70dad4;
 }
 </style>

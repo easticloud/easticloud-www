@@ -80,7 +80,7 @@ export default {
 @import "~@/assets/css/solution.less";
 </style>
 <style lang="less">
-.m-solution {
+.p-solution {
     .m-box {
         .u-bg {
             margin: 30px 0;
