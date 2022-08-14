@@ -139,8 +139,15 @@ export default {
     // background-color: #fff;
     // .r(6px);
     // white-space: nowrap;
+
+    .el-dropdown-menu__item{
+        padding:0;
+    }
+
     a {
         color: #333 !important;
+        padding:0 20px;
+        .db;
         // margin-right: 30px;
         // &:last-child {
         //     margin-right: 0;
