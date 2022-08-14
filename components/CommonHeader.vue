@@ -148,4 +148,9 @@ export default {
     @hover: #000;
     .c-header-theme(@color,@hover);
 }
+// .c-header.theme-blue {
+//     @color:rgba(39, 2, 248, 0.8);
+//     @hover: #4162eb;
+//     .c-header-theme(@color,@hover);
+// }
 </style>
