@@ -55,7 +55,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 .m-datacenter {
     padding: 60px 0;
     background-color: #fafbff;

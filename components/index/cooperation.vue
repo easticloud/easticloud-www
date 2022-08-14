@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 .m-cooperation {
     padding: 60px 0;
     background-color: #fafbff;

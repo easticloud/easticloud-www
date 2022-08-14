@@ -6,13 +6,21 @@
                     <component :is="require(`../assets/img/logo.svg?inline`)" :fill="fill_color" />
                 </a>
                 <div class="c-header-nav">
-                    <nuxt-link class="u-link" :to="item.href" v-for="(item, i) in data" :key="i">{{
-                        item.label
-                    }}
-                    <div class="u-children" v-if="item.children && item.children.length">
-                        <nuxt-link class="u-child" :to="child.href" v-for="(child,c) in item.children" :key="c">{{child.label}}</nuxt-link>
+                    <div class="u-item" v-for="(item, i) in data" :key="i">
+                        <template v-if="item.children && item.children.length">
+                            <el-dropdown>
+                                <nuxt-link class="u-link" :to="item.href">
+                                    {{ item.label }}
+                                </nuxt-link>
+                                <el-dropdown-menu slot="dropdown" class="c-header-subnav">
+                                    <el-dropdown-item v-for="(child, c) in item.children" :key="c">
+                                        <nuxt-link class="u-child" :to="child.href">{{ child.label }}</nuxt-link>
+                                    </el-dropdown-item>
+                                </el-dropdown-menu>
+                            </el-dropdown>
+                        </template>
+                        <nuxt-link class="u-link" :to="item.href" v-else>{{ item.label }}</nuxt-link>
                     </div>
-                    </nuxt-link>
                 </div>
             </div>
             <div class="c-header-right">
@@ -30,15 +38,23 @@ export default {
     data() {
         return {
             data: [
-                { label: "产品服务", href: "", children: [
-                    { label: "容器服务", href: "/production/container" },
-                    { label: "EHPC", href: "/production/compute" },
-                    { label: "裸金属服务器", href: "/production/servers" },
-                    { label: "TikTok", href: "/production/international" }]
+                {
+                    label: "产品服务",
+                    href: "",
+                    children: [
+                        { label: "容器服务", href: "/production/container" },
+                        { label: "EHPC", href: "/production/compute" },
+                        { label: "裸金属服务器", href: "/production/servers" },
+                        { label: "TikTok", href: "/production/international" },
+                    ],
                 },
-                { label: "解决方案", href: "", children: [
-                    { label: "混合云", href: "/solution/mix" },
-                    { label: "TikTok", href: "/solution/tiktok" }]
+                {
+                    label: "解决方案",
+                    href: "",
+                    children: [
+                        { label: "混合云", href: "/solution/mix" },
+                        { label: "TikTok", href: "/solution/tiktok" },
+                    ],
                 },
                 { label: "最新动态", href: "" },
                 { label: "合作伙伴", href: "" },
@@ -51,19 +67,19 @@ export default {
         return {};
     },
     computed: {
-        kv_mode: function () { 
-            const path = this.$route.path
-            if(path.indexOf('solution') !== -1 || path.indexOf('production') !== -1 )  return 'blue';
+        kv_mode: function () {
+            const path = this.$route.path;
+            if (path.indexOf("solution") !== -1 || path.indexOf("production") !== -1) return "blue";
             return this.$store.state.home.kv_mode;
         },
-        fill_color : function (){
+        fill_color: function () {
             const mode = {
-                dark:'#ffffff',
-                light:'#000000',
-                blue:'#4162EB'
-            }
+                dark: "#ffffff",
+                light: "#000000",
+                blue: "#4162EB",
+            };
             return mode[this.kv_mode];
-        }
+        },
     },
 };
 </script>
@@ -93,7 +109,7 @@ export default {
 }
 .c-header-nav {
     display: flex;
-    margin-top:10px;
+    margin-top: 10px;
     .u-link {
         .pr;
         .fz(16px);
@@ -109,17 +125,26 @@ export default {
                 .r(2px);
             }
         }
-        &:hover .u-children {
-            .flex;
-        }
-        .u-children{
-            .pa;
-            .lb(0,-46px);
-            .none;
-            .w(500px); 
-            gap:20px;
-            padding: 50px 0 10px 0;
-        }
+        // &:hover .u-children {
+        //     .flex;
+        // }
+    }
+}
+.c-header-subnav{
+    // .pa;
+    // margin-top: 25px;
+    // margin-left: -10px;
+    // .none;
+    // padding: 15px 30px;
+    // background-color: #fff;
+    // .r(6px);
+    // white-space: nowrap;
+    a {
+        color: #333 !important;
+        // margin-right: 30px;
+        // &:last-child {
+        //     margin-right: 0;
+        // }
     }
 }
 .c-header-right {
@@ -141,9 +166,8 @@ export default {
     }
 }
 .c-header-theme(@color,@hover) {
-
-    *{
-        transition:0.1s ease-in-out;
+    * {
+        transition: 0.1s ease-in-out;
     }
     .c-header-nav {
         .u-link {
@@ -151,10 +175,10 @@ export default {
 
             &:hover {
                 color: @hover;
-                .u-child { 
+                .u-child {
                     color: @hover;
-                    &:hover{
-                        text-decoration:underline;
+                    &:hover {
+                        text-decoration: underline;
                     }
                 }
                 &::after {

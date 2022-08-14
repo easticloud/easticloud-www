@@ -60,7 +60,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 .m-production {
     padding: 60px 0;
     background-color: #fafbff;

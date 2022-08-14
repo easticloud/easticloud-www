@@ -70,7 +70,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scoped lang="less">
 .m-solution {
     padding: 60px 0 80px 0;
 }
