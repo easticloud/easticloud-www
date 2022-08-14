@@ -1,5 +1,5 @@
 <template>
-    <div class="m-production">
+    <div class="m-production" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
             <div class="m-production-box m-compute">
@@ -14,11 +14,11 @@
             </div>
 
             <div class="m-tabs">
-                <span class="u-tab active">产品优势</span>
-                <span class="u-tab">产品特性</span>
-                <span class="u-tab">应用场景</span>
+                <a href="#tab1" class="u-tab active">产品优势</a>
+                <a href="#tab2" class="u-tab">产品特性</a>
+                <a href="#tab3" class="u-tab">应用场景</a>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab1">
                 <h3><i>▶</i>产品优势</h3>
                 <p class="u-section">
                     <strong>1、高效计算</strong>
@@ -39,7 +39,7 @@
                     >
                 </p>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab2">
                 <h3><i>▶</i>产品特性</h3>
                 <p class="u-section">
                     <strong>1、弹性伸缩，按需配置</strong>
@@ -66,7 +66,7 @@
                     >
                 </p>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab3">
                 <h3><i>▶</i>应用场景</h3>
                 <p class="u-section">
                     <strong>企业核心业务托管</strong>
@@ -79,7 +79,7 @@
                 </p>
             </div>
             <div class="m-goBack">
-                <a href="http://" target="_blank">返回顶部 →</a>
+                <a href="#top">返回顶部 →</a>
             </div>
         </div>
 

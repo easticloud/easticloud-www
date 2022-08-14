@@ -34,16 +34,16 @@
             }
         }
         &.m-container {
-            background: url(/static/images/index/production/container.png) center right #fff no-repeat;
+            background: url(../../static/images/index/production/container.png) center right #fff no-repeat;
         }
         &.m-servers {
-            background: url(/static/images/index/production/servers.png) center right #fff no-repeat;
+            background: url(../../static/images/index/production/servers.png) center right #fff no-repeat;
         }
         &.m-compute {
-            background: url(/static/images/index/production/compute.png) center right #fff no-repeat;
+            background: url(../../static/images/index/production/compute.png) center right #fff no-repeat;
         }
         &.m-international {
-            background: url(/static/images/index/production/tiktok.png) center right #fff no-repeat;
+            background: url(../../static/images/index/production/tiktok.png) center right #fff no-repeat;
             .u-desc {
                 .pt(30px);
                 &.u-first {
@@ -69,6 +69,7 @@
             .fz(20px,50px);
             .x;
             .pointer;
+            .color(#374567);
             &.active {
                 color: #4162eb;
                 &:after {
@@ -158,8 +159,10 @@
             justify-content: space-between;
             .m-item {
                 .flex;
+                gap:20px;
                 .u-img {
-                    .size(50px);
+                    .size(40px);
+                    .mt(10px);
                 }
                 .u-txt {
                     .flex;

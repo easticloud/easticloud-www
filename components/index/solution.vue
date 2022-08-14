@@ -21,7 +21,7 @@
                     <div class="u-info">
                         <span class="u-title">{{ solutions.title }}</span>
                         <span class="u-desc">{{ solutions.desc }}</span>
-                        <span><a class="u-more" :href="solutions.href" target="_blank">了解详情</a></span>
+                        <span><nuxt-link class="u-more" :to="solutions.href" target="_blank">了解详情</nuxt-link></span>
                     </div>
                 </div>
             </div>
@@ -41,13 +41,13 @@ export default {
                 {
                     title: "混合云解决方案",
                     desc: "通过私有云+公有云的部署模式，能将用户私有云业务和公有云业务无缝联接，实现资源的灵活调度。同时，可以将用户孤岛化、碎片化的 IT 资源通过公有云无缝连接起来，实现所有 IT 资源的互联互通。",
-                    href: "",
+                    href: "/solution/mix",
                     src: "/images/index/solution/1.png",
                 },
                 {
                     title: "Tiktok解决方案",
                     desc: "抖音国际版Tiktok在全球深受欢迎，成为国际上下载量最多的APP之一。由简入深，针对浏览客户、运营客户以及企业高端客户都有完整配套解决方案，解决个人/企业Tiktok问题。",
-                    href: "",
+                    href: "/solution/tiktok",
                     src: "/images/index/solution/2.png",
                 },
             ],

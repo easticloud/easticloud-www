@@ -7,12 +7,12 @@
             </h3>
             <div class="m-production-content">
                 <div class="u-list">
-                    <a class="u-item" :href="item.href" v-for="(item, i) in data" :key="i">
+                    <nuxt-link class="u-item" :to="item.href" v-for="(item, i) in data" :key="i">
                         <i class="u-img"><img :src="item.src" /></i>
                         <span class="u-title">{{ item.title }}</span>
                         <span class="u-desc">{{ item.desc }} </span>
                         <img class="u-more" src="~assets/img/more.svg" alt="→" />
-                    </a>
+                    </nuxt-link>
                 </div>
             </div>
         </div>
@@ -25,28 +25,28 @@ export default {
             data: [
                 {
                     src: "/images/index/production/3.svg",
-                    href: "",
+                    href: "/production/servers",
                     target: "_blank",
                     title: "裸金属服务器",
                     desc: "提供高性能、资源独享、安全隔离的专属弹性裸金属服务器，同时具备云资源的敏捷性、灵活性与高可用。",
                 },
                 {
                     src: "/images/index/production/1.svg",
-                    href: "",
+                    href: "/production/compute",
                     target: "_blank",
                     title: "高性能计算",
                     desc: "安全、弹性、快捷的高效云上高性能计算平台，能支持计算资源的弹性定制。",
                 },
                 {
                     src: "/images/index/production/4.svg",
-                    href: "",
+                    href: "/production/container",
                     target: "_blank",
                     title: "容器引擎",
                     desc: "深度整合Kubernetes，为用户提供以多集群、多租户为核心的资源管理能力，以应用商店、可视化编排为核心的应用部署能力。",
                 },
                 {
                     src: "/images/index/production/2.svg",
-                    href: "",
+                    href: "/production/international",
                     target: "_blank",
                     title: "海外加速专线",
                     desc: "游戏场景、互联网应用加速。",

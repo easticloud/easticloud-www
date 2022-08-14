@@ -1,6 +1,6 @@
 <template>
-    <div class="m-solution">
-        <common-header class="theme-light"></common-header>
+    <div class="m-solution" id="top">
+        <common-header class="theme-blue"></common-header>
         <div class="m-header m-mix">
             <div class="wp">
                 <h2>混合云解决方案</h2>
@@ -12,13 +12,13 @@
             </div>
         </div>
         <div class="m-tabs wp">
-            <span class="u-tab active">架构需求</span>
-            <span class="u-tab">架构示例</span>
-            <span class="u-tab">方案优势</span>
-            <span class="u-tab">客户案例</span>
+            <a href="#tab1" class="u-tab active">架构需求</a>
+            <a href="#tab2" class="u-tab">架构示例</a>
+            <a href="#tab3" class="u-tab">方案优势</a>
+            <a href="#tab4" class="u-tab">客户案例</a>
         </div>
 
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab1">
             <h3>架构需求</h3>
             <div class="u-box">
                 <div class="u-item u-item-1">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab2">
             <h3>架构示例</h3>
             <div class="m-example">
                 <div class="m-imgBox">
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab3">
             <h3>方案优势</h3>
             <div class="u-box">
                 <div class="u-item u-column">
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab4">
             <h3>客户案例</h3>
             <div class="u-box">
                 <a href="http://" target="_blank" class="u-link">
@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="m-goBack">
-            <a href="http://" target="_blank">返回顶部 →</a>
+            <a href="#top" >返回顶部 →</a>
         </div>
         <common-footer></common-footer>
     </div>

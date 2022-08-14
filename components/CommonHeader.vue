@@ -8,7 +8,11 @@
                 <div class="c-header-nav">
                     <nuxt-link class="u-link" :to="item.href" v-for="(item, i) in data" :key="i">{{
                         item.label
-                    }}</nuxt-link>
+                    }}
+                    <div class="u-children" v-if="item.children && item.children.length">
+                        <nuxt-link class="u-child" :to="child.href" v-for="(child,c) in item.children" :key="c">{{child.label}}</nuxt-link>
+                    </div>
+                    </nuxt-link>
                 </div>
             </div>
             <div class="c-header-right">
@@ -26,8 +30,16 @@ export default {
     data() {
         return {
             data: [
-                { label: "产品服务", href: "" },
-                { label: "解决方案", href: "" },
+                { label: "产品服务", href: "", children: [
+                    { label: "容器服务", href: "/production/container" },
+                    { label: "EHPC", href: "/production/compute" },
+                    { label: "裸金属服务器", href: "/production/servers" },
+                    { label: "TikTok", href: "/production/international" }]
+                },
+                { label: "解决方案", href: "", children: [
+                    { label: "混合云", href: "/solution/mix" },
+                    { label: "TikTok", href: "/solution/tiktok" }]
+                },
                 { label: "最新动态", href: "" },
                 { label: "合作伙伴", href: "" },
                 { label: "联系我们", href: "" },
@@ -39,11 +51,18 @@ export default {
         return {};
     },
     computed: {
-        kv_mode: function () {
+        kv_mode: function () { 
+            const path = this.$route.path
+            if(path.indexOf('solution') !== -1 || path.indexOf('production') !== -1 )  return 'blue';
             return this.$store.state.home.kv_mode;
         },
         fill_color : function (){
-            return this.kv_mode == 'dark' ? '#ffffff' : '#000000';
+            const mode = {
+                dark:'#ffffff',
+                light:'#000000',
+                blue:'#4162EB'
+            }
+            return mode[this.kv_mode];
         }
     },
 };
@@ -90,6 +109,17 @@ export default {
                 .r(2px);
             }
         }
+        &:hover .u-children {
+            .flex;
+        }
+        .u-children{
+            .pa;
+            .lb(0,-46px);
+            .none;
+            .w(500px); 
+            gap:20px;
+            padding: 50px 0 10px 0;
+        }
     }
 }
 .c-header-right {
@@ -121,8 +151,14 @@ export default {
 
             &:hover {
                 color: @hover;
+                .u-child { 
+                    color: @hover;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
                 &::after {
-                    background-color: @color;
+                    background-color: @hover;
                 }
             }
         }
@@ -148,9 +184,9 @@ export default {
     @hover: #000;
     .c-header-theme(@color,@hover);
 }
-// .c-header.theme-blue {
-//     @color:rgba(39, 2, 248, 0.8);
-//     @hover: #4162eb;
-//     .c-header-theme(@color,@hover);
-// }
+.c-header.theme-blue {
+    @color:rgba(0,0,0,0.8);
+    @hover: #4162eb;
+    .c-header-theme(@color,@hover);
+}
 </style>

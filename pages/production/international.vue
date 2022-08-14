@@ -1,5 +1,5 @@
 <template>
-    <div class="m-production">
+    <div class="m-production" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
             <div class="m-production-box m-international">
@@ -16,7 +16,7 @@
                 <h3>覆盖TikTok全生态服务 让品牌和产品一夜爆红</h3>
                 <div class="m-box">
                     <div class="m-item">
-                        <img class="u-img" src="/static/images/index/production/1.png" alt="定制化品牌全案" />
+                        <img class="u-img" src="../../static/images/index/production/1.png" alt="定制化品牌全案" />
                         <div class="u-txt">
                             <span class="u-title">定制化品牌全案</span>
                             <span>创意设计服务全案定制 </span>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="m-item">
-                        <img class="u-img" src="/static/images/index/production/2.png" alt="增量广告投放" />
+                        <img class="u-img" src="../../static/images/index/production/2.png" alt="增量广告投放" />
                         <div class="u-txt">
                             <span class="u-title">增量广告投放</span>
                             <span>覆盖200+国家及75种语言 </span>
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="m-item">
-                        <img class="u-img" src="/static/images/index/production/3.png" alt="一站式KOL直播运营" />
+                        <img class="u-img" src="../../static/images/index/production/3.png" alt="一站式KOL直播运营" />
                         <div class="u-txt">
                             <span class="u-title">一站式KOL直播运营</span>
                             <span>直连全球20万+KOL </span>
@@ -53,7 +53,7 @@
                     <div class="m-item">
                         <img
                             class="u-img"
-                            src="/static/images/index/production/4.png"
+                            src="../../static/images/index/production/4.png"
                             alt="一站式全流程开户轻松卖货到全球"
                         />
                         <div class="u-txt">
@@ -70,7 +70,7 @@
                     <div class="m-item">
                         <img
                             class="u-img"
-                            src="/static/images/index/production/5.png"
+                            src="../../static/images/index/production/5.png"
                             alt="多维度定制投放策略打造品牌营销新阵地"
                         />
                         <div class="u-txt">
@@ -87,7 +87,7 @@
                     <div class="m-item">
                         <img
                             class="u-img"
-                            src="/static/images/index/production/6.png"
+                            src="../../static/images/index/production/6.png"
                             alt="以流量转化ROI为导向全流程监测效果优化"
                         />
                         <div class="u-txt">
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="m-goBack">
-                <a href="http://" target="_blank">返回顶部 →</a>
+                <a href="#top">返回顶部 →</a>
             </div>
         </div>
         <common-footer></common-footer>

@@ -1,5 +1,5 @@
 <template>
-    <div class="m-solution">
+    <div class="m-solution" id="top">
         <common-header class="theme-light"></common-header>
         <div class="m-header m-tiktok">
             <div class="wp">
@@ -11,12 +11,12 @@
             </div>
         </div>
         <div class="m-tabs wp">
-            <span class="u-tab active">关于TikTok</span>
-            <span class="u-tab">发展趋势</span>
-            <span class="u-tab">方案优势</span>
-            <span class="u-tab">客户案例</span>
+            <a href="#tab1" class="u-tab active">关于TikTok</a>
+            <a href="#tab2" class="u-tab">发展趋势</a>
+            <a href="#tab3" class="u-tab">方案优势</a>
+            <a href="#tab4" class="u-tab">客户案例</a>
         </div>
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab1">
             <h3>关于TikTok</h3>
             <div class="u-box">
                 <span class="u-link no-border">
@@ -30,11 +30,11 @@
                 </span>
             </div>
         </div>
-        <div class="m-box">
+        <div class="m-box" id="tab2">
             <h3 class="wp">发展趋势</h3>
             <img class="u-bg" src="../../static/images/index/solution/bg.png" alt="" srcset="" />
         </div>
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab3">
             <h3>方案优势</h3>
             <div class="m-plan">
                 <div class="u-info">
@@ -49,7 +49,7 @@
                 <img class="u-img" src="../../static/images/index/solution/img.png" />
             </div>
         </div>
-        <div class="m-box wp">
+        <div class="m-box wp" id="tab4">
             <h3>客户案例</h3>
             <div class="u-box">
                 <a href="http://" target="_blank" class="u-link">
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="m-goBack">
-            <a href="http://" target="_blank">返回顶部 →</a>
+            <a href="#top">返回顶部 →</a>
         </div>
         <common-footer></common-footer>
     </div>

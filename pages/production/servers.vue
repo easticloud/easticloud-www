@@ -1,5 +1,5 @@
 <template>
-    <div class="m-production">
+    <div class="m-production" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
             <div class="m-production-box m-servers">
@@ -15,12 +15,12 @@
             </div>
 
             <div class="m-tabs">
-                <span class="u-tab active">产品优势</span>
-                <span class="u-tab">产品功能</span>
-                <span class="u-tab">产品类型</span>
-                <span class="u-tab">应用场景</span>
+                <a href="#tab1" class="u-tab active">产品优势</a>
+                <a href="#tab2" class="u-tab">产品功能</a>
+                <a href="#tab3" class="u-tab">产品类型</a>
+                <a href="#tab4" class="u-tab">应用场景</a>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab1">
                 <h3><i>▶</i> 产品优势</h3>
                 <p class="u-section">
                     <strong>1、极致性能，承载企业核心业务</strong>
@@ -51,7 +51,7 @@
                     >
                 </p>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab2">
                 <h3><i>▶</i>产品功能</h3>
                 <p class="u-section">
                     <strong>存储</strong>
@@ -79,14 +79,14 @@
                     >
                 </p>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab3">
                 <h3><i>▶</i>产品类型</h3>
                 <p class="u-section">
                     <strong>物理主机目前提供以下四种类型的硬件配置</strong>
-                    <span><img src="/static/images/index/production/hardware.png" alt="" /></span>
+                    <span><img src="../../static/images/index/production/hardware.png" alt="" /></span>
                 </p>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab4">
                 <h3><i>▶</i>应用场景</h3>
                 <p class="u-section">
                     <strong>企业核心业务托管</strong>
@@ -99,7 +99,7 @@
                 </p>
             </div>
             <div class="m-goBack">
-                <a href="http://" target="_blank">返回顶部 →</a>
+                <a href="#top">返回顶部 →</a>
             </div>
         </div>
 

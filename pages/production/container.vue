@@ -1,5 +1,5 @@
 <template>
-    <div class="m-production">
+    <div class="m-production" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
             <div class="m-production-box m-container">
@@ -15,10 +15,10 @@
             </div>
 
             <div class="m-tabs">
-                <span class="u-tab active">产品特性</span>
-                <span class="u-tab">使用场景</span>
+                <a href="#tab1" class="u-tab active">产品特性</a>
+                <a href="#tab1" class="u-tab">使用场景</a>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab1">
                 <h3><i>▶</i>产品特性</h3>
                 <p class="u-section">
                     <strong>1、一键整合基础设施</strong>
@@ -41,7 +41,7 @@
                     <span>和主流公有云厂商数据面以及网络面互通，实现和laaS平台的紧密协作。</span>
                 </p>
             </div>
-            <div class="m-info-box">
+            <div class="m-info-box" id="tab2">
                 <h3><i>▶</i>使用场景</h3>
                 <p class="u-section">
                     <strong>1、企业快速构建PaaS平台</strong>
@@ -63,7 +63,7 @@
                 </p>
             </div>
             <div class="m-goBack">
-                <a href="http://" target="_blank">返回顶部 →</a>
+                <a href="#top">返回顶部 →</a>
             </div>
         </div>
 
