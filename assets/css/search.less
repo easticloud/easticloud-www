@@ -1,0 +1,80 @@
+.p-search {
+    .m-search-header {
+        .c-header {
+            position: static;
+        }
+        background-color: #fafbff;
+        .m-search-box {
+            padding: 50px 0;
+            .flex;
+            gap: 20px;
+            .u-btn {
+                .w(120px);
+                flex-shrink: 0;
+            }
+        }
+    }
+    .m-search-tabs {
+        .mt(50px);
+        border-bottom: 1px solid #e1e6f1;
+        .flex;
+        .u-tab {
+            .pr;
+            .size(200px,50px);
+            .fz(20px,50px);
+            .x;
+            .pointer;
+            .color(#374567);
+            &.active {
+                color: #4162eb;
+                &:after {
+                    content: "";
+                    .pa;
+                    .full;
+                    .lt(0);
+                    border-bottom: 1px solid #4162eb;
+                }
+            }
+        }
+    }
+    .m-search-content {
+        .flex;
+        flex-direction: column;
+        .m-item {
+            .pt(50px);
+            .flex;
+            flex-direction: column;
+            b {
+                .color(#4162eb);
+            }
+            .u-title {
+                .fz(20px,2);
+                .color(#374567);
+            }
+            .u-desc {
+                .fz(18px,2);
+                .color(#778ba6);
+            }
+        }
+    }
+    .m-contact {
+        .flex;
+        .mt(50px);
+        .h(100px);
+        .fz(20px);
+        .color(#fff);
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        background: url(../../static/images/index/contact.png) center center no-repeat;
+        .u-contact {
+            background-color: #fff;
+            .r(10px);
+            .color(#4162eb);
+            padding: 10px 34px;
+            &:hover {
+                filter: brightness(120%);
+            }
+        }
+    }
+}

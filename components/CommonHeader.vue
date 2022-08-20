@@ -25,9 +25,9 @@
             </div>
             <div class="c-header-right">
                 <a href="#" class="u-btn u-lang">简</a>
-                <a href="#" class="u-btn u-search">
+                <nuxt-link to="/search" class="u-btn u-search">
                     <i class="u-icon el-icon-search"></i>
-                </a>
+                </nuxt-link>
             </div>
         </div>
     </div>
