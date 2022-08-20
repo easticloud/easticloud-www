@@ -68,8 +68,6 @@ export default {
     },
     computed: {
         kv_mode: function () {
-            const path = this.$route.path;
-            if (path.indexOf("solution") !== -1 || path.indexOf("production") !== -1) return "blue";
             return this.$store.state.home.kv_mode;
         },
         fill_color: function () {
@@ -81,6 +79,15 @@ export default {
             return mode[this.kv_mode];
         },
     },
+    watch: {
+        $route: {
+            handler (to) {
+                const path = to.path.replace("/", "")
+                path ? this.$store.commit("home/setKVMode", 'blue') : this.$store.commit("home/setKVMode", 'dark');
+            },
+            immediate: true,
+        }
+    }
 };
 </script>
 

@@ -1,15 +1,15 @@
 <template>
     <div class="p-search" id="top">
-        <div class="wp">
-            <div class="m-search-header">
-                <common-header class="theme-light"></common-header>
-                <div class="m-search-box">
-                    <el-input placeholder="请输入内容" v-model="search">
-                        <el-button icon="el-icon-search" slot="prepend" link></el-button>
-                    </el-input>
-                    <el-button class="u-btn" type="primary">搜索</el-button>
-                </div>
+        <common-header></common-header>
+        <div class="m-search-header">
+            <div class="m-search-box wp">
+                <el-input placeholder="请输入内容" v-model="search">
+                    <el-button icon="el-icon-search" slot="prepend" link></el-button>
+                </el-input>
+                <el-button class="u-btn" type="primary">搜索</el-button>
             </div>
+        </div>
+        <div class="wp">
             <div class="m-search-tabs">
                 <a href="" class="u-tab active">全部(3）</a>
                 <a href="" class="u-tab">产品(1)</a>

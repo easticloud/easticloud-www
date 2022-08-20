@@ -1,14 +1,15 @@
 <template>
     <div class="p-partner" id="top">
-        <div class="wp">
-            <common-header class="theme-blue"></common-header>
-            <div class="m-header">
+        <common-header></common-header>
+        <div class="m-header">
+            <div class="u-txt wp">
                 <h2>客户案例</h2>
                 <p class="u-desc">
                     东云正在为众多企业提供可靠、敏捷、高效的云计算服务
                 </p>
             </div>
-
+        </div>
+        <div class="wp">
             <div class="m-tabs">
                 <a href="#tab1" class="u-tab active">金融行业</a>
                 <a href="#tab2" class="u-tab">教育行业</a>
@@ -260,7 +261,8 @@
                             </div>
                         </div>
                         <div class="u-info">
-                            四川航空股份有限公司，以安全为品牌核心价值，持续安全飞行32年，被中国民航局授予“飞行安全四星奖”。川航现运营航线网络覆盖亚洲、欧洲、大洋洲、北美洲及非洲地区，并连续 6 年被中国权威民航测评机构CAPSE航空服务奖授予“最佳航空公司”。
+                            四川航空股份有限公司，以安全为品牌核心价值，持续安全飞行32年，被中国民航局授予“飞行安全四星奖”。川航现运营航线网络覆盖亚洲、欧洲、大洋洲、北美洲及非洲地区，并连续 6
+                            年被中国权威民航测评机构CAPSE航空服务奖授予“最佳航空公司”。
                         </div>
                         <div class="u-bottom">
                             <a href="http://" class="u-icon">
@@ -284,7 +286,8 @@
                             </div>
                         </div>
                         <div class="u-info">
-                            SciPlus 科研云是由上海科技创新资源数据中心主导研发的，顺应科学数据特点的、具有分布式存储、并行计算和大数据计算的容器云平台。经过一年多的努力，SciPlus 科研云已经初步完善云平台的研究和建设，核心是聚焦支撑服务，为科学研究赋能。
+                            SciPlus 科研云是由上海科技创新资源数据中心主导研发的，顺应科学数据特点的、具有分布式存储、并行计算和大数据计算的容器云平台。经过一年多的努力，SciPlus
+                            科研云已经初步完善云平台的研究和建设，核心是聚焦支撑服务，为科学研究赋能。
                         </div>
                         <div class="u-bottom">
                             <a href="http://" class="u-icon">

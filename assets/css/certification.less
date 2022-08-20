@@ -1,0 +1,108 @@
+.p-certification {
+    .m-header {
+        box-sizing: border-box;
+        .pt(80px);
+        .h(350px);
+        .flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        background: url(../../static/images/index/certification/bg.png) center center no-repeat;
+        .u-txt {
+            width: 100%;
+        }
+        h2 {
+            .fz(36px,50px);
+        }
+        .u-desc {
+            .fz(18px,32px);
+            .w(720px);
+            color: #7488a4;
+            letter-spacing: 1px;
+        }
+    }
+    .m-tabs {
+        .mt(50px);
+        border-bottom: 1px solid #e1e6f1;
+        .flex;
+        .u-tab {
+            .pr;
+            .size(200px,50px);
+            .fz(20px,50px);
+            .x;
+            .pointer;
+            .color(#374567);
+            &.active {
+                color: #4162eb;
+                &:after {
+                    content: "";
+                    .pa;
+                    .full;
+                    .lt(0);
+                    border-bottom: 1px solid #4162eb;
+                }
+            }
+        }
+    }
+    .m-info-box {
+        padding: 50px 0;
+        border-bottom: 1px solid #e1e6f1;
+        h3 {
+            .fz(36px,50px);
+            .bold;
+            color: #374567;
+            letter-spacing: 2px;
+        }
+        .m-content {
+            .pt(25px);
+            .flex;
+            justify-content: space-between;
+            align-items: center;
+            .m-item {
+                .size(32%,270px);
+                box-sizing: border-box;
+                .r(5px);
+                padding: 25px;
+                border: 1px solid #e1e6f1;
+                .flex;
+                flex-direction: column;
+                gap: 10px;
+                .x;
+                .color(#7488a4);
+                .u-img {
+                    border: 1px dashed #999;
+                    padding: 5px 0;
+                    .mb(20px);
+                }
+            }
+            &.m-rank {
+                flex-wrap: wrap;
+                .m-item {
+                    .mb(20px);
+                    .size(49%,100px);
+                    flex-direction: row;
+                    gap: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    .fz(18px);
+                    .u-txt {
+                        .fz(24px);
+                        .bold;
+                        .color(#374567);
+                    }
+                }
+            }
+        }
+    }
+    .m-goBack {
+        .lh(60px);
+        .h(60px);
+        .pb(30px);
+        .x;
+        a {
+            .fz(16px);
+            .color(#4162eb);
+        }
+    }
+}

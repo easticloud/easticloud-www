@@ -1,5 +1,6 @@
 export const state = () => ({
-    kv_mode: 'dark',
+    kv_mode: 'blue',
+    // kv_mode: 'dark',
 });
 
 export const mutations = {
