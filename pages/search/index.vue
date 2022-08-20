@@ -32,7 +32,7 @@
 </template>
 <script>
 export default {
-    name: "IndexPage",
+    name: "SearchPage",
     data () {
         return {
             search: ''

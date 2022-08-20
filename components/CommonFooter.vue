@@ -29,10 +29,10 @@ export default {
     data() {
         return {
             data: [
-                { label: "产品服务", href: "" },
-                { label: "解决方案", href: "" },
-                { label: "资质认证", href: "" },
-                { label: "合作伙伴", href: "" },
+                { label: "产品服务", href: "/production/container" },
+                { label: "解决方案", href: "/solution/mix" },
+                { label: "资质认证", href: "/certification" },
+                { label: "合作伙伴", href: "/partner" },
                 { label: "联系我们", href: "" },
             ],
         };
