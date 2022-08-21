@@ -1,9 +1,6 @@
-import { $cms } from "@/utils/https";
+import {$cms} from './https'
 
-const request = $cms();
+export function createMessage(data){
+    return $cms().post(`/api/cms/misc/contact`,data)
+}
 
-function createContactForm(data) {
-    return request.post("/api/cms/misc/contact", data);
-};
-
-export { createContactForm };

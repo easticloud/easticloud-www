@@ -1,9 +1,10 @@
+import { installStandardInterceptors } from "./interceptors.js";
 import axios from "axios";
-const __cms = "https://cms.easticloud.iruxu.com/";
+import { API } from "@/settings";
 
 // cms通用请求接口
 function $cms(options) {
-    let domain = (options && options.domain) || __cms;
+    let domain = (options && options.domain) || API.cms;
     let config = {
         // 同时发送cookie和basic auth
         withCredentials: true,
@@ -19,6 +20,7 @@ function $cms(options) {
     const ins = axios.create(config);
 
     // 指定拦截器
+    installStandardInterceptors(ins, options);
 
     return ins;
 }

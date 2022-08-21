@@ -25,12 +25,17 @@
                     <div class="u-item u-after">
                         <h4>售后咨询</h4>
                         <span class="u-desc">开发技术支持、个性化产品培训</span>
-                        <a href="mailto:contact@easticloud.com" class="u-contact"><i
-                                class="el-icon-message"></i>contact@easticloud.com</a>
+                        <a href="mailto:contact@easticloud.com" class="u-contact"
+                            ><i class="el-icon-message"></i>contact@easticloud.com</a
+                        >
                     </div>
                 </div>
                 <div class="m-map">
-                    <img class="u-img" src="../../static/images/index/contact/map.png" alt="江苏东云互联网络科技有限公司">
+                    <img
+                        class="u-img"
+                        src="../../static/images/index/contact/map.png"
+                        alt="江苏东云互联网络科技有限公司"
+                    />
                 </div>
             </div>
             <div class="m-info-box" id="tab2">
@@ -82,59 +87,58 @@
     </div>
 </template>
 <script>
-import { createContactForm } from '@/utils/api.js';
+import { createMessage } from "@/utils/api.js";
 export default {
-    name: 'ContactPage',
+    name: "ContactPage",
     data: function () {
         return {
             form: {
-                name: '',
-                phone: '',
+                name: "",
+                phone: "",
                 email: "",
                 addr: "",
-                content: ""
+                content: "",
             },
-            active: '',
-            isCheck: false
+            active: "",
+            isCheck: false,
         };
     },
     computed: {},
     watch: {},
     methods: {
-        onFocus (key) {
-            this.active = key
+        onFocus(key) {
+            this.active = key;
         },
-        checkForm (val) {
-            if (this.isCheck && !val) return 'err'
+        checkForm(val) {
+            if (this.isCheck && !val) return "err";
         },
-        onReset () {
+        onReset() {
             this.form = {
-                name: '',
-                phone: '',
+                name: "",
+                phone: "",
                 email: "",
                 addr: "",
-                content: ""
-            }
-            this.active = ''
-            this.isCheck = false
+                content: "",
+            };
+            this.active = "";
+            this.isCheck = false;
         },
-        onSubmit () {
-            const arr = Object.values(this.form).filter(Boolean)
-            this.isCheck = arr.length === 5 ? false : true
-            !this.isCheck && createContactForm(this.form).then(() => {
-                this.$notify({
-                    title: '成功',
-                    message: '留言成功',
-                    type: 'success'
+        onSubmit() {
+            const arr = Object.values(this.form).filter(Boolean);
+            this.isCheck = arr.length === 5 ? false : true;
+            !this.isCheck &&
+                createMessage(this.form).then(() => {
+                    this.$notify({
+                        title: "成功",
+                        message: "留言成功",
+                        type: "success",
+                    });
+                    this.onReset();
                 });
-                this.onReset()
-
-            })
-
-        }
+        },
     },
 };
 </script>
-<style lang='less'>
-@import '~@/assets/css/contact.less';
+<style lang="less">
+@import "~@/assets/css/contact.less";
 </style>
