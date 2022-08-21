@@ -38,14 +38,14 @@
                 <div class="m-form">
                     <div class="m-item m-row" @click="onFocus('name')">
                         <span class="u-label">联系人</span>
-                        <div class="u-input" :class="active == 'name' ? 'active' : ''">
+                        <div class="u-input" :class="[active == 'name' ? 'active' : '', checkForm(form.name)]">
                             <i class="el-icon-user"></i>
                             <input type="text" v-model="form.name" placeholder="请输入您的名称（称呼）" />
                         </div>
                     </div>
                     <div class="m-item m-row" @click="onFocus('phone')">
                         <span class="u-label">联系电话</span>
-                        <div class="u-input" :class="active == 'phone' ? 'active' : ''">
+                        <div class="u-input" :class="[active == 'phone' ? 'active' : '', checkForm(form.phone)]">
                             <i class="el-icon-mobile-phone"></i>
                             <span class="u-desc">+86</span>
                             <input type="text" v-model="form.phone" placeholder="请输入您的电话号码" />
@@ -53,21 +53,21 @@
                     </div>
                     <div class="m-item m-row" @click="onFocus('email')">
                         <span class="u-label">联系邮箱</span>
-                        <div class="u-input" :class="active == 'email' ? 'active' : ''">
+                        <div class="u-input" :class="[active == 'email' ? 'active' : '', checkForm(form.email)]">
                             <i class="el-icon-message"></i>
-                            <input type="text" v-model="form.email" placeholder="请请输入您的邮箱号码" />
+                            <input type="text" v-model="form.email" placeholder="请输入您的邮箱号码" />
                         </div>
                     </div>
                     <div class="m-item m-row" @click="onFocus('addr')">
                         <span class="u-label">联系地址</span>
-                        <div class="u-input" :class="active == 'addr' ? 'active' : ''">
+                        <div class="u-input" :class="[active == 'addr' ? 'active' : '', checkForm(form.addr)]">
                             <i class="el-icon-map-location"></i>
                             <input type="text" v-model="form.addr" placeholder="请输入您的联系地址" />
                         </div>
                     </div>
                     <div class="m-item m-row" @click="onFocus('content')">
                         <span class="u-label">留言内容</span>
-                        <div class="u-textarea" :class="active == 'content' ? 'active' : ''">
+                        <div class="u-textarea" :class="[active == 'content' ? 'active' : '', checkForm(form.content)]">
                             <i class="el-icon-chat-dot-square"></i>
                             <textarea v-model="form.content" placeholder="请输入您详细的需求内容"></textarea>
                         </div>
@@ -82,6 +82,7 @@
     </div>
 </template>
 <script>
+import { createContactForm } from '@/utils/api.js';
 export default {
     name: 'ContactPage',
     data: function () {
@@ -94,6 +95,7 @@ export default {
                 content: ""
             },
             active: '',
+            isCheck: false
         };
     },
     computed: {},
@@ -101,7 +103,9 @@ export default {
     methods: {
         onFocus (key) {
             this.active = key
-            console.log(this.active)
+        },
+        checkForm (val) {
+            if (this.isCheck && !val) return 'err'
         },
         onReset () {
             this.form = {
@@ -111,13 +115,17 @@ export default {
                 addr: "",
                 content: ""
             }
+            this.isCheck = false
         },
         onSubmit () {
+            const arr = Object.values(this.form).filter(Boolean)
+            this.isCheck = arr.length === 5 ? false : true
+            !this.isCheck && createContactForm(this.form).then(() => {
+                console.log(1)
+            })
 
         }
     },
-    created: function () { },
-    mounted: function () { },
 };
 </script>
 <style lang='less'>

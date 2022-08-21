@@ -118,13 +118,16 @@
                 }
                 .u-input,
                 .u-textarea {
+                    .flex;
                     .r(5px);
                     .clip;
                     box-sizing: border-box;
                     background: #fafbff;
                     border: 1px solid #e1e6f1;
+                    align-items: center;
                     input,
                     textarea {
+                        .full;
                         border: 0;
                         background-color: transparent;
                     }
@@ -152,6 +155,9 @@
                             opacity: 0.5;
                         }
                     }
+                    &.err {
+                        border: 1px solid #f00;
+                    }
                 }
                 .u-input {
                     .size(100%,65px);
@@ -176,13 +182,13 @@
                 }
                 .u-textarea {
                     .flex;
+                    align-items: flex-start;
                     padding: 10px;
                     i {
                         .fz(18px,2);
                         .mr(10px);
                     }
                     textarea {
-                        .full;
                         .h(108px);
                         .fz(18px,2);
                     }
