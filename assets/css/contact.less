@@ -1,0 +1,219 @@
+.p-contact {
+    .m-header {
+        box-sizing: border-box;
+        .pt(60px);
+        .h(375px);
+        .flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        background: url(../../static/images/index/contact/bg.png) center center no-repeat;
+        .u-txt {
+            width: 100%;
+        }
+        h2 {
+            .fz(36px,50px);
+            .mb(20px);
+        }
+        .u-desc {
+            .fz(18px,32px);
+            .w(730px);
+            color: #7488a4;
+            letter-spacing: 1px;
+        }
+    }
+    .m-tabs {
+        .mt(50px);
+        border-bottom: 1px solid #e1e6f1;
+        .flex;
+        .u-tab {
+            .pr;
+            .size(200px,50px);
+            .fz(20px,50px);
+            .x;
+            .pointer;
+            .color(#374567);
+            &.active {
+                color: #4162eb;
+                &:after {
+                    content: "";
+                    .pa;
+                    .full;
+                    .lt(0);
+                    border-bottom: 1px solid #4162eb;
+                }
+            }
+        }
+    }
+    .m-info-box {
+        padding: 50px 0;
+        border-bottom: 1px solid #e1e6f1;
+        h3 {
+            .fz(36px,50px);
+            .bold;
+            color: #374567;
+            letter-spacing: 2px;
+        }
+        .m-box {
+            .flex;
+            .pt(25px);
+            justify-content: space-between;
+            gap: 45px;
+            .u-item {
+                .flex;
+                .r(5px);
+                .w(48%);
+                padding: 30px 30px 30px 230px;
+                box-sizing: border-box;
+                flex-direction: column;
+                gap: 20px;
+                h4 {
+                    .fz(24px,50px);
+                    .bold;
+                    .color(#374567);
+                }
+                .u-desc {
+                    .color(#7488a4);
+                    .fz(18px);
+                }
+                .u-contact {
+                    .fz(21px);
+                    .color(#4162eb);
+                    i {
+                        .mr(10px);
+                    }
+                }
+                &.u-pre {
+                    background: url(../../static/images/index/contact/01.png) 50px bottom #fafbff no-repeat;
+                }
+                &.u-after {
+                    background: url(../../static/images/index/contact/02.png) 50px bottom #fafbff no-repeat;
+                }
+            }
+        }
+        .m-map {
+            .mt(50px);
+            .flex;
+            justify-content: center;
+            .u-img {
+                .r(5px);
+                width: 100%;
+            }
+        }
+        .m-form {
+            .flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            .pt(25px);
+            .m-item {
+                min-width: 100%;
+                flex: 1;
+                .u-label {
+                    .db;
+                    .fz(20px,1.5);
+                    .color(#374567);
+                    .mb(10px);
+                }
+                .u-input,
+                .u-textarea {
+                    .r(5px);
+                    .clip;
+                    box-sizing: border-box;
+                    background: #fafbff;
+                    border: 1px solid #e1e6f1;
+                    input,
+                    textarea {
+                        border: 0;
+                        background-color: transparent;
+                    }
+                    &.active {
+                        background: #4162eb;
+                        color: #fff;
+                        input::-webkit-input-placeholder,
+                        textarea::-webkit-input-placeholder {
+                            color: #fff;
+                            opacity: 0.5;
+                        }
+                        input:-moz-placeholder,
+                        textarea:-moz-placeholder {
+                            color: #fff;
+                            opacity: 0.5;
+                        }
+                        input::-moz-placeholder,
+                        textarea::-moz-placeholder {
+                            color: #fff;
+                            opacity: 0.5;
+                        }
+                        input:-ms-input-placeholder,
+                        textarea:-ms-input-placeholder {
+                            color: #fff;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .u-input {
+                    .size(100%,65px);
+                    i {
+                        margin: 0 10px 0 20px;
+                    }
+                    .u-desc {
+                        .fz(18px);
+                        .color(#374567);
+                        .mr(10px);
+                        opacity: 0.5;
+                    }
+                    input {
+                        .lh(65px);
+                        .fz(18px,65px);
+                    }
+                    &.active {
+                        .u-desc {
+                            .color(#fff);
+                        }
+                    }
+                }
+                .u-textarea {
+                    .flex;
+                    padding: 10px;
+                    i {
+                        .fz(18px,2);
+                        .mr(10px);
+                    }
+                    textarea {
+                        .full;
+                        .h(108px);
+                        .fz(18px,2);
+                    }
+                }
+                &.m-row {
+                    min-width: 48%;
+                }
+            }
+        }
+        .m-btns {
+            .flex;
+            margin: 25px 0 50px 0;
+            gap: 50px;
+            justify-content: center;
+            .u-btn {
+                .x;
+                .pointer;
+                .size(180px,65px);
+                .r(5px);
+                .fz(18px,65px);
+                box-sizing: border-box;
+                background: #fafbff;
+                border: 1px solid #e1e6f1;
+                &.u-submit {
+                    background: #4162eb;
+                    color: #fff;
+                    &:hover {
+                        filter: brightness(120%);
+                    }
+                }
+            }
+        }
+    }
+}

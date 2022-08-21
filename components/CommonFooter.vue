@@ -33,7 +33,7 @@ export default {
                 { label: "解决方案", href: "/solution/mix" },
                 { label: "资质认证", href: "/certification" },
                 { label: "合作伙伴", href: "/partner" },
-                { label: "联系我们", href: "" },
+                { label: "联系我们", href: "/contact" },
             ],
         };
     },
