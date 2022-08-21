@@ -115,13 +115,20 @@ export default {
                 addr: "",
                 content: ""
             }
+            this.active = ''
             this.isCheck = false
         },
         onSubmit () {
             const arr = Object.values(this.form).filter(Boolean)
             this.isCheck = arr.length === 5 ? false : true
             !this.isCheck && createContactForm(this.form).then(() => {
-                console.log(1)
+                this.$notify({
+                    title: '成功',
+                    message: '留言成功',
+                    type: 'success'
+                });
+                this.onReset()
+
             })
 
         }
