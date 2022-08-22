@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m-info-box" id="tab1">
+            <div class="m-info-box" id="tab2">
                 <h3>重要资质</h3>
                 <div class="m-content">
                     <div class="m-item">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m-info-box" id="tab1">
+            <div class="m-info-box" id="tab3">
                 <h3>国产化认证</h3>
                 <div class="m-content">
                     <div class="m-item">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m-info-box" id="tab1">
+            <div class="m-info-box" id="tab4">
                 <h3>权威榜单</h3>
                 <div class="m-content m-rank">
                     <div class="m-item">

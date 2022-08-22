@@ -31,18 +31,17 @@
                             中国银行股份有限公司，成立于1912年2月5日，是五大国有商业银行之一。其业务范围涵盖商业银行、投资银行、保险和航空租赁，旗下有中银国际、中银保险等控股金融机构，在全球范围内为个人和公司客户提供金融服务。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/compute" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/compute.png" alt="高性能计算">
                                 </span>
-
                                 <span>高性能计算</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/container" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/container.png" alt="容器引擎">
                                 </span>
@@ -62,13 +61,12 @@
                             招商银行是中国境内第一家完全由企业法人持股的股份制商业银行，也是国家从体制外推动银行业改革的第一家试点银行。成立29年来，招商银行坚持“因您而变”的经营理念，发展成为沪港两地上市的国内第六大商业银行。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/production/compute" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/compute.png" alt="高性能计算">
                                 </span>
-
                                 <span>高性能计算</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/container" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/container.png" alt="容器引擎">
                                 </span>
@@ -89,7 +87,7 @@
                             年稳健、创新的发展，已成长为一家以人寿保险为核心，拥有资产管理、养老社区和健康保险等全产业链的全国性大型保险公司，连续 11 年荣登“中国企业 500 强”。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -108,13 +106,12 @@
                             阳光保险集团股份有限公司是中国500强企业、中国服务业100强，成立3年便跻身于七大保险集团，10年成功进军医疗健康产业，成为全球市场化企业中成长最快的集团公司之一，是保险行业变革发展的中坚力量。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
-
-                            <a href="http://" class="u-icon">
+                            <a href="/production/container" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/container.png" alt="容器引擎">
                                 </span>
@@ -141,18 +138,17 @@
                             Bryant Stibel 基金等投资机构联合投资。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/servers" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器">
                                 </span>
-
                                 <span>裸金属服务器</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/international" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/tiktok.png" alt="Tik Tok">
                                 </span>
@@ -172,7 +168,7 @@
                             北京红亚华宇科技有限公司，是一家聚焦信息技术发展，为教育从业者提供优质教育服务的创新型科技公司，面向国内本科及职业院校提供信息安全、大数据、软件工程及人工智能等专业建设服务、师资建设服务、实训基地建设服务及校企共建服务。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -197,12 +193,12 @@
                             江苏交通控股有限公司成立于2000年，是江苏省重点交通基础设施建设项目省级投融资平台，负责江苏省高速公路、铁路、机场、港口、等重点交通基础设施建设的投融资，江苏省高速公路的运营和管理，以及相关竞争性企业的资产和市场经营管理。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/servers" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器">
                                 </span>
@@ -221,7 +217,7 @@
                             昆明航空于2009年2月15日正式开航运营，目前运营22架波音737系列飞机。致力于以昆明为核心，在建设高品质线性网络的基础上，逐步打造省内省外联动及国内国际（两亚）叠加的网络经营模式，做实西南，辐射全国重点地区的网络结构。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -240,12 +236,12 @@
                             北京市首都公路发展集团有限公司于1999年9月成立，是北京市属国有大型企业，负责北京高速公路建设、运营管理和相关产业经营。2016年实施合并重组后，企业实力进一步增强，更肩负起北京城市道路、综合交通枢纽与静态交通建设管理的重任。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
-                            <a href="http://" class="u-icon">
+                            <a href="/production/servers" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器">
                                 </span>
@@ -265,7 +261,7 @@
                             年被中国权威民航测评机构CAPSE航空服务奖授予“最佳航空公司”。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -290,7 +286,7 @@
                             科研云已经初步完善云平台的研究和建设，核心是聚焦支撑服务，为科学研究赋能。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -309,7 +305,7 @@
                             南邮AI云平台，由南京南邮信息产业技术研究院有限公司主导发布，包含了研发共享平台、算法仓库平台和AI云边一体化及边缘推理平台等。已建成的南邮AI云平台一期，为AI开发者提供开发环境的同时，也便于企业快速部署。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -328,7 +324,7 @@
                             元征科技股份有限公司是一家从事汽车诊断、检测、养护产品研发、生产和销售的高科技企业。元征的产品以汽车电子检测和诊断为基础，涵盖汽车诊断、检测、养护、机械、电子、工具等产品线，为全球经销商、汽车制造厂提供汽车产品、技术和服务。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
@@ -347,7 +343,7 @@
                             云天化集团有限责任公司以化肥及现代农业、玻纤新材料为主业，石油化工、磷矿采选及磷化工、商贸及制造服务、产业金融等业务板块多元协同发展，利润与业绩持续上升，践行“绿色高质量发展”理念，多年位居中国化工百强上市公司前三名。
                         </div>
                         <div class="u-bottom">
-                            <a href="http://" class="u-icon">
+                            <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
                                     <img src="../../static/images/index/partner/mix.png" alt="混合云" />
                                 </span>
