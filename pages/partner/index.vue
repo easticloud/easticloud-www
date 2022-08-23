@@ -21,7 +21,7 @@
                 <div class="m-content">
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/01.png" alt="中国银行" class="u-img">
+                            <img src="../../static/images/index/partner/01.svg" alt="中国银行" class="u-img">
                             <div class="u-name">
                                 <span>中国银行</span>
                                 <span class="u-desc">行业：金融-银行</span>
@@ -33,17 +33,17 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                             <a href="/production/compute" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/compute.png" alt="高性能计算">
+                                    <img src="../../static/images/index/partner/compute.svg" alt="高性能计算">
                                 </span>
                                 <span>高性能计算</span></a>
                             <a href="/production/container" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/container.png" alt="容器引擎">
+                                    <img src="../../static/images/index/partner/container.svg" alt="容器引擎">
                                 </span>
                                 <span>容器引擎</span>
                             </a>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/02.png" alt="招商银行" class="u-img">
+                            <img src="../../static/images/index/partner/02.svg" alt="招商银行" class="u-img">
                             <div class="u-name">
                                 <span>招商银行</span>
                                 <span class="u-desc">行业：金融-银行</span>
@@ -63,12 +63,12 @@
                         <div class="u-bottom">
                             <a href="/production/compute" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/compute.png" alt="高性能计算">
+                                    <img src="../../static/images/index/partner/compute.svg" alt="高性能计算">
                                 </span>
                                 <span>高性能计算</span></a>
                             <a href="/production/container" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/container.png" alt="容器引擎">
+                                    <img src="../../static/images/index/partner/container.svg" alt="容器引擎">
                                 </span>
                                 <span>容器引擎</span>
                             </a>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/03.png" alt="泰康保险集团" class="u-img">
+                            <img src="../../static/images/index/partner/03.svg" alt="泰康保险集团" class="u-img">
                             <div class="u-name">
                                 <span>泰康保险集团</span>
                                 <span class="u-desc">行业：金融-保险</span>
@@ -89,14 +89,14 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/04.png" alt="阳光保险集团" class="u-img">
+                            <img src="../../static/images/index/partner/04.svg" alt="阳光保险集团" class="u-img">
                             <div class="u-name">
                                 <span>阳光保险集团</span>
                                 <span class="u-desc">行业：金融-保险</span>
@@ -108,12 +108,12 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                             <a href="/production/container" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/container.png" alt="容器引擎">
+                                    <img src="../../static/images/index/partner/container.svg" alt="容器引擎">
                                 </span>
                                 <span>容器引擎</span>
                             </a>
@@ -127,7 +127,7 @@
                 <div class="m-content">
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/05.png" alt="VIPKID" class="u-img">
+                            <img src="../../static/images/index/partner/05.svg" alt="VIPKID" class="u-img">
                             <div class="u-name">
                                 <span>VIPKID</span>
                                 <span class="u-desc">行业：在线教育</span>
@@ -140,17 +140,17 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                             <a href="/production/servers" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器">
+                                    <img src="../../static/images/index/partner/servers.svg" alt="裸金属服务器">
                                 </span>
                                 <span>裸金属服务器</span></a>
                             <a href="/production/international" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/tiktok.png" alt="Tik Tok">
+                                    <img src="../../static/images/index/partner/tiktok.svg" alt="Tik Tok">
                                 </span>
                                 <span>Tik Tok</span>
                             </a>
@@ -158,7 +158,7 @@
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/06.png" alt="红亚科技" class="u-img">
+                            <img src="../../static/images/index/partner/06.svg" alt="红亚科技" class="u-img">
                             <div class="u-name">
                                 <span>红亚科技</span>
                                 <span class="u-desc">行业：教育</span>
@@ -170,7 +170,7 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
 
@@ -183,7 +183,7 @@
                 <div class="m-content">
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/07.png" alt="江苏交通控股有限公司" class="u-img">
+                            <img src="../../static/images/index/partner/07.svg" alt="江苏交通控股有限公司" class="u-img">
                             <div class="u-name">
                                 <span>江苏交通控股有限公司</span>
                                 <span class="u-desc">行业：交通</span>
@@ -195,19 +195,19 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                             <a href="/production/servers" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器">
+                                    <img src="../../static/images/index/partner/servers.svg" alt="裸金属服务器">
                                 </span>
                                 <span>裸金属服务器</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/08.png" alt="昆明航空" class="u-img">
+                            <img src="../../static/images/index/partner/08.svg" alt="昆明航空" class="u-img">
                             <div class="u-name">
                                 <span>昆明航空</span>
                                 <span class="u-desc">行业：航空运输</span>
@@ -219,14 +219,14 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/09.png" alt="北京首都公路发展集团有限公司" class="u-img">
+                            <img src="../../static/images/index/partner/09.svg" alt="北京首都公路发展集团有限公司" class="u-img">
                             <div class="u-name">
                                 <span>北京首都公路发展集团有限公司</span>
                                 <span class="u-desc">行业：政府及公共事业</span>
@@ -238,19 +238,19 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                             <a href="/production/servers" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器">
+                                    <img src="../../static/images/index/partner/servers.svg" alt="裸金属服务器">
                                 </span>
                                 <span>裸金属服务器</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/10.png" alt="四川航空" class="u-img">
+                            <img src="../../static/images/index/partner/10.svg" alt="四川航空" class="u-img">
                             <div class="u-name">
                                 <span>四川航空</span>
                                 <span class="u-desc">行业：交通</span>
@@ -263,7 +263,7 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>
@@ -275,7 +275,7 @@
                 <div class="m-content">
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/11.png" alt="SciPlus 科研云" class="u-img">
+                            <img src="../../static/images/index/partner/11.svg" alt="SciPlus 科研云" class="u-img">
                             <div class="u-name">
                                 <span>SciPlus 科研云</span>
                                 <span class="u-desc">行业：政府及公共事业</span>
@@ -288,14 +288,14 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/12.png" alt="南邮AI云平台" class="u-img">
+                            <img src="../../static/images/index/partner/12.svg" alt="南邮AI云平台" class="u-img">
                             <div class="u-name">
                                 <span>南邮AI云平台</span>
                                 <span class="u-desc">行业：政府及公共事业</span>
@@ -307,14 +307,14 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/13.png" alt="元征科技股份有限公司" class="u-img">
+                            <img src="../../static/images/index/partner/13.svg" alt="元征科技股份有限公司" class="u-img">
                             <div class="u-name">
                                 <span>元征科技股份有限公司</span>
                                 <span class="u-desc">行业：企业服务</span>
@@ -326,14 +326,14 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>
                     </div>
                     <div class="m-item">
                         <div class="u-title">
-                            <img src="../../static/images/index/partner/14.png" alt="云天化信息" class="u-img">
+                            <img src="../../static/images/index/partner/14.svg" alt="云天化信息" class="u-img">
                             <div class="u-name">
                                 <span>云天化信息</span>
                                 <span class="u-desc">行业：企业服务</span>
@@ -345,7 +345,7 @@
                         <div class="u-bottom">
                             <a href="/solution/mix" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/mix.png" alt="混合云" />
+                                    <img src="../../static/images/index/partner/mix.svg" alt="混合云" />
                                 </span>
                                 <span>混合云</span></a>
                         </div>

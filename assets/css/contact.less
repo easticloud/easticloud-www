@@ -85,10 +85,10 @@
                     }
                 }
                 &.u-pre {
-                    background: url(../../static/images/index/contact/01.png) 50px bottom #fafbff no-repeat;
+                    background: url(../../static/images/index/contact/01.svg) 50px bottom #fafbff no-repeat;
                 }
                 &.u-after {
-                    background: url(../../static/images/index/contact/02.png) 50px bottom #fafbff no-repeat;
+                    background: url(../../static/images/index/contact/02.svg) 50px bottom #fafbff no-repeat;
                 }
             }
         }
@@ -105,9 +105,10 @@
             .flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 40px;
             .pt(25px);
             .m-item {
+                .pr;
                 min-width: 100%;
                 flex: 1;
                 .u-label {
@@ -197,6 +198,12 @@
                 }
                 &.m-row {
                     min-width: 48%;
+                }
+                .u-err{
+                    .color(red);
+                    .fz(13px);
+                    .pa;
+                    .lb(0, -24px);
                 }
             }
         }
