@@ -96,9 +96,38 @@
             .mt(50px);
             .flex;
             justify-content: center;
-            .u-img {
-                .r(5px);
+            .u-map {
                 width: 100%;
+                height: 500px;
+            }
+            .m-address {
+                .pa;
+                .flex;
+                .size(350px,115px);
+                gap: 15px;
+                box-sizing: border-box;
+                background: url(../../static/images/index/contact/border.png) center center no-repeat;
+                padding: 15px;
+                color: #fff;
+                .u-logo {
+                    .size(70px);
+                    .clip;
+                    flex-shrink: 0;
+                    border: 1px dashed #333;
+                    background-color: #fff;
+                    img {
+                        .size(70px);
+                    }
+                }
+                .u-info {
+                    .flex;
+                    .fz(12px);
+                    gap: 10px;
+                    flex-direction: column;
+                    .u-title {
+                        .fz(16px);
+                    }
+                }
             }
         }
         .m-form {
@@ -199,7 +228,7 @@
                 &.m-row {
                     min-width: 48%;
                 }
-                .u-err{
+                .u-err {
                     .color(red);
                     .fz(13px);
                     .pa;
