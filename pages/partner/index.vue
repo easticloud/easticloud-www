@@ -39,14 +39,14 @@
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/compute.png" alt="高性能计算" />
+                                    <img src="../../static/images/index/partner/compute.svg" alt="高性能计算" />
                                 </span>
 
                                 <span>高性能计算</span></a
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/container.png" alt="容器引擎" />
+                                    <img src="../../static/images/index/partner/container.svg" alt="容器引擎" />
                                 </span>
                                 <span>容器引擎</span>
                             </a>
@@ -68,14 +68,14 @@
                         <div class="u-bottom">
                             <a href="/production/compute" target="_blank" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/compute.png" alt="高性能计算" />
+                                    <img src="../../static/images/index/partner/compute.svg" alt="高性能计算" />
                                 </span>
 
                                 <span>高性能计算</span></a
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/container.png" alt="容器引擎" />
+                                    <img src="../../static/images/index/partner/container.svg" alt="容器引擎" />
                                 </span>
                                 <span>容器引擎</span>
                             </a>
@@ -129,7 +129,7 @@
 
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/container.png" alt="容器引擎" />
+                                    <img src="../../static/images/index/partner/container.svg" alt="容器引擎" />
                                 </span>
                                 <span>容器引擎</span>
                             </a>
@@ -164,14 +164,14 @@
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器" />
+                                    <img src="../../static/images/index/partner/servers.svg" alt="裸金属服务器" />
                                 </span>
 
                                 <span>裸金属服务器</span></a
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/tiktok.png" alt="Tik Tok" />
+                                    <img src="../../static/images/index/partner/tiktok.svg" alt="Tik Tok" />
                                 </span>
                                 <span>Tik Tok</span>
                             </a>
@@ -227,7 +227,7 @@
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器" />
+                                    <img src="../../static/images/index/partner/servers.svg" alt="裸金属服务器" />
                                 </span>
                                 <span>裸金属服务器</span></a
                             >
@@ -282,7 +282,7 @@
                             >
                             <a href="http://" class="u-icon">
                                 <span class="u-img">
-                                    <img src="../../static/images/index/partner/servers.png" alt="裸金属服务器" />
+                                    <img src="../../static/images/index/partner/servers.svg" alt="裸金属服务器" />
                                 </span>
                                 <span>裸金属服务器</span></a
                             >
