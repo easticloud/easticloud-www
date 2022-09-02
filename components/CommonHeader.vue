@@ -56,7 +56,6 @@ export default {
                         { label: "TikTok", href: "/solution/tiktok" },
                     ],
                 },
-                { label: "最新动态", href: "" },
                 { label: "资质认证", href: "/certification" },
                 { label: "合作伙伴", href: "/partner" },
                 { label: "联系我们", href: "/contact" },

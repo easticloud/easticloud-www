@@ -4,12 +4,33 @@
         .pt(150px);
         box-sizing: border-box;
         background-color: #fafbff;
-        .m-search-box { 
+        .m-search-box {
             .flex;
             gap: 20px;
             .u-btn {
-                .w(120px);
+                background-color: #4162eb;
+                color: #fff;
+                .w(150px);
+                .x;
+                .fz(20px,60px);
+                .r(5px);
+                .pointer;
+                letter-spacing: 2px;
                 flex-shrink: 0;
+                &:hover{
+                    filter: brightness(110%);
+                }
+            }
+            .el-input-group__append, .el-input-group__prepend{
+                background-color: #fff;
+                .fz(28px);
+                padding: 0 0 0 40px;
+            }
+            .el-input__inner{
+                border: 1px solid #DCDFE6;
+                border-left: 0;
+                .h(60px);
+                .fz(20px,60px);
             }
         }
     }

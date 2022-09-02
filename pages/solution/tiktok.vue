@@ -53,13 +53,13 @@
             <h3>客户案例</h3>
             <div class="u-box">
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m4.png" alt="" />
+                    <img src="../../static/images/index/solution/m4.svg" alt="" />
                 </a>
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m5.png" alt="" />
+                    <img src="../../static/images/index/solution/m5.svg" alt="" />
                 </a>
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m6.png" alt="" />
+                    <img src="../../static/images/index/solution/m6.svg" alt="" />
                 </a>
             </div>
         </div>

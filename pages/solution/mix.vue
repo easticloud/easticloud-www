@@ -66,28 +66,28 @@
             <h3>方案优势</h3>
             <div class="u-box">
                 <div class="u-item u-column">
-                    <img class="u-img" src="../../static/images/index/solution/i1.png" alt="" />
+                    <img class="u-img" src="../../static/images/index/solution/i1.svg" alt="" />
                     <span class="u-title">公私统一架构</span>
                     <span class="u-desc"
                         >以一致的技术架构为混合云用户交付公有云与私有云，为用户提供一致的云平台使用体验。</span
                     >
                 </div>
                 <div class="u-item u-column">
-                    <img class="u-img" src="../../static/images/index/solution/i2.png" alt="" />
+                    <img class="u-img" src="../../static/images/index/solution/i2.svg" alt="" />
                     <span class="u-title">云网深度融合</span>
                     <span class="u-desc"
                         >提供丰富的组网模式，用户通过东云控制台即可完成不同网络接入方案的配置，轻松构建混合云。</span
                     >
                 </div>
                 <div class="u-item u-column">
-                    <img class="u-img" src="../../static/images/index/solution/i3.png" alt="" />
+                    <img class="u-img" src="../../static/images/index/solution/i3.svg" alt="" />
                     <span class="u-title">显著降低成本</span>
                     <span class="u-desc"
                         >采用公有云+托管云的混合云模式，三年总支出成本减少40%以上，最大限度地提高财务收益。</span
                     >
                 </div>
                 <div class="u-item u-column">
-                    <img class="u-img" src="../../static/images/index/solution/i4.png" alt="" />
+                    <img class="u-img" src="../../static/images/index/solution/i4.svg" alt="" />
                     <span class="u-title">统一管理界面</span>
                     <span class="u-desc"
                         >通过统一的多云管理平台对接各类云平台的API，让用户在一个界面下，管理多套异构资源。</span
@@ -99,13 +99,13 @@
             <h3>客户案例</h3>
             <div class="u-box">
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m1.png" alt="" />
+                    <img src="../../static/images/index/solution/m1.svg" alt="" />
                 </a>
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m2.png" alt="" />
+                    <img src="../../static/images/index/solution/m2.svg" alt="" />
                 </a>
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m3.png" alt="" />
+                    <img src="../../static/images/index/solution/m3.svg" alt="" />
                 </a>
             </div>
         </div>

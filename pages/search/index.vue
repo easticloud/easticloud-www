@@ -6,7 +6,7 @@
                 <el-input placeholder="请输入内容" v-model="search">
                     <el-button icon="el-icon-search" slot="prepend" link></el-button>
                 </el-input>
-                <el-button class="u-btn" type="primary">搜索</el-button>
+                <span class="u-btn">搜索</span>
             </div>
         </div>
         <div class="wp">

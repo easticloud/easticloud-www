@@ -30,7 +30,18 @@
                     </div>
                 </div>
                 <div class="m-map">
-                    <img class="u-img" src="../../static/images/index/contact/map.png" alt="江苏东云互联网络科技有限公司">
+                    <baidu-map class="u-map" :center="center" :zoom="zoom" ak="Ew6p8zLR26m3UX3cu4ibtwUGqwprCmZI">
+                        <baidu-map-marker :position="{ lng: 118.726879, lat: 31.997976 }"></baidu-map-marker>
+                        <BaiduMapOverlay pane="labelPane" class="m-address" @draw="draw">
+                            <div class="u-logo">
+                                <img src="../../static/images/index/contact/logo.svg" alt="江苏东云互联网络科技有限公司">
+                            </div>
+                            <div class="u-info">
+                                <span class="u-title">江苏东云互联网络科技有限公司</span>
+                                <span>江苏省南京市建邺区江东中路359号国睿大厦1号楼B座16层</span>
+                            </div>
+                        </BaiduMapOverlay>
+                    </baidu-map>
                 </div>
             </div>
             <div class="m-info-box" id="tab2">
@@ -38,39 +49,47 @@
                 <div class="m-form">
                     <div class="m-item m-row" @click="onFocus('name')">
                         <span class="u-label">联系人</span>
-                        <div class="u-input" :class="active == 'name' ? 'active' : ''">
+                        <div class="u-input" :class="[active == 'name' ? 'active' : '', rules.name.isErr ? 'err' : '']">
                             <i class="el-icon-user"></i>
-                            <input type="text" v-model="form.name" placeholder="请输入您的名称（称呼）" />
+                            <input type="text" v-model="form.name" placeholder="请填写您的名称（称呼）" />
                         </div>
+                        <span class="u-err" v-if="rules.name.isErr">{{ rules.name.value }}</span>
                     </div>
                     <div class="m-item m-row" @click="onFocus('phone')">
                         <span class="u-label">联系电话</span>
-                        <div class="u-input" :class="active == 'phone' ? 'active' : ''">
+                        <div class="u-input"
+                            :class="[active == 'phone' ? 'active' : '', rules.phone.isErr ? 'err' : '']">
                             <i class="el-icon-mobile-phone"></i>
                             <span class="u-desc">+86</span>
-                            <input type="text" v-model="form.phone" placeholder="请输入您的电话号码" />
+                            <input type="text" v-model="form.phone" placeholder="请填写您的联系电话" />
                         </div>
+                        <span class="u-err" v-if="rules.phone.isErr">{{ rules.phone.value }}</span>
                     </div>
                     <div class="m-item m-row" @click="onFocus('email')">
                         <span class="u-label">联系邮箱</span>
-                        <div class="u-input" :class="active == 'email' ? 'active' : ''">
+                        <div class="u-input"
+                            :class="[active == 'email' ? 'active' : '', rules.email.isErr ? 'err' : '']">
                             <i class="el-icon-message"></i>
-                            <input type="text" v-model="form.email" placeholder="请请输入您的邮箱号码" />
+                            <input type="text" v-model="form.email" placeholder="请填写您的邮箱地址" />
                         </div>
+                        <span class="u-err" v-if="rules.email.isErr">{{ rules.email.value }}</span>
                     </div>
                     <div class="m-item m-row" @click="onFocus('addr')">
                         <span class="u-label">联系地址</span>
-                        <div class="u-input" :class="active == 'addr' ? 'active' : ''">
+                        <div class="u-input" :class="[active == 'addr' ? 'active' : '', rules.addr.isErr ? 'err' : '']">
                             <i class="el-icon-map-location"></i>
-                            <input type="text" v-model="form.addr" placeholder="请输入您的联系地址" />
+                            <input type="text" v-model="form.addr" placeholder="请填写您的联系地址" />
                         </div>
+                        <span class="u-err" v-if="rules.addr.isErr">{{ rules.addr.value }}</span>
                     </div>
                     <div class="m-item m-row" @click="onFocus('content')">
                         <span class="u-label">留言内容</span>
-                        <div class="u-textarea" :class="active == 'content' ? 'active' : ''">
+                        <div class="u-textarea"
+                            :class="[active == 'content' ? 'active' : '', rules.content.isErr ? 'err' : '']">
                             <i class="el-icon-chat-dot-square"></i>
-                            <textarea v-model="form.content" placeholder="请输入您详细的需求内容"></textarea>
+                            <textarea v-model="form.content" placeholder="请填写您的具体需求"></textarea>
                         </div>
+                        <span class="u-err" v-if="rules.content.isErr">{{ rules.content.value }}</span>
                     </div>
                 </div>
                 <div class="m-btns">
@@ -82,44 +101,130 @@
     </div>
 </template>
 <script>
+import { createMessage } from "@/utils/api.js";
+import BaiduMap from 'vue-baidu-map/components/map/Map.vue'
+import BaiduMapMarker from 'vue-baidu-map/components/overlays/Marker.vue'
+import BaiduMapOverlay from 'vue-baidu-map/components/overlays/Overlay.vue'
 export default {
-    name: 'ContactPage',
+    name: "ContactPage",
+    components: {
+        BaiduMap,
+        BaiduMapMarker,
+        BaiduMapOverlay
+    },
     data: function () {
         return {
             form: {
-                name: '',
-                phone: '',
+                name: "",
+                phone: "",
                 email: "",
                 addr: "",
-                content: ""
+                content: "",
             },
-            active: '',
+            rules: {
+                name: {
+                    isErr: false,
+                    value: "请填写您的名称（称呼）"
+                },
+                phone: {
+                    isErr: false,
+                    value: "请填写您的联系电话"
+                },
+                email: {
+                    isErr: false,
+                    value: "请填写您的邮箱地址"
+                },
+                addr: {
+                    isErr: false,
+                    value: "请填写您的联系地址"
+                },
+                content: {
+                    isErr: false,
+                    value: "请填写您的具体需求"
+                },
+            },
+            active: "",
+
+            center: { lng: '118.726879', lat: '31.997976' },
+            zoom: 16,
         };
     },
-    computed: {},
     watch: {},
     methods: {
         onFocus (key) {
-            this.active = key
-            console.log(this.active)
+            this.active = key;
         },
+        checkForm (form) {
+            Object.keys(form).forEach(key => {
+                if (form[key]) {
+                    this.rules[key].isErr = false
+
+                    // 判断手机号
+                    const phoneReg = /^1[34578]\d{9}$/g
+                    if (key == 'phone' && !phoneReg.test(form[key])) {
+                        this.rules['phone'].isErr = true
+                        this.rules['phone'].value = '请填写正确的手机号码'
+                    }
+
+                    // 判断邮箱
+                    const emailReg = /^([A-Za-z0-9_\-\.]+)@([A-Za-z0-9_\-\.]+)\.([A-Za-z]{2,6})$/g
+                    if (key == 'email' && !emailReg.test(form[key])) {
+                        this.rules['email'].isErr = true
+                        this.rules['email'].value = '请填写正确的邮箱地址'
+                    }
+
+                    // 判断地址
+                    if (key == 'addr' && form[key].length < 8) {
+                        this.rules['addr'].isErr = true
+                        this.rules['addr'].value = '请填写具体的联系地址'
+                    }
+
+                    // 判断地址
+                    if (key == 'content' && form[key].length < 20) {
+                        this.rules['content'].isErr = true
+                        this.rules['content'].value = '请填写详细的需求，不少于20个字'
+                    }
+                } else {
+                    this.rules[key].isErr = true
+                }
+            })
+        },
+
         onReset () {
             this.form = {
-                name: '',
-                phone: '',
+                name: "",
+                phone: "",
                 email: "",
                 addr: "",
-                content: ""
-            }
+                content: "",
+            };
+            this.active = "";
+            this.isCheck = false;
         },
-        onSubmit () {
 
+        onSubmit () {
+            this.checkForm(this.form)
+            const isSubmit = Object.values(this.rules).map(item => item.isErr).filter(Boolean);
+            console.log(isSubmit)
+            !isSubmit.length &&
+                createMessage(this.form).then(() => {
+                    this.$notify({
+                        title: "成功",
+                        message: "留言成功",
+                        type: "success",
+                    });
+                    this.onReset();
+                });
+        },
+        // 地图标签定位
+        draw ({ el, BMap, map }) {
+            const pixel = map.pointToOverlayPixel(new BMap.Point(118.726679, 31.998076))
+            el.style.left = pixel.x - 124 + 'px'
+            el.style.top = pixel.y - 142 + 'px'
         }
     },
-    created: function () { },
-    mounted: function () { },
 };
 </script>
-<style lang='less'>
-@import '~@/assets/css/contact.less';
+<style lang="less">
+@import "~@/assets/css/contact.less";
 </style>
