@@ -99,10 +99,10 @@
             <h3>客户案例</h3>
             <div class="u-box">
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m1.svg" alt="" />
+                    <img src="../../static/images/index/solution/m1.png" alt="" />
                 </a>
                 <a href="http://" target="_blank" class="u-link">
-                    <img src="../../static/images/index/solution/m2.svg" alt="" />
+                    <img src="../../static/images/index/solution/m2.png" alt="" />
                 </a>
                 <a href="http://" target="_blank" class="u-link">
                     <img src="../../static/images/index/solution/m3.svg" alt="" />
