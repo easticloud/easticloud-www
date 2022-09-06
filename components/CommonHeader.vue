@@ -23,12 +23,12 @@
                     </div>
                 </div>
             </div>
-            <div class="c-header-right">
+            <!-- <div class="c-header-right">
                 <a href="#" class="u-btn u-lang">简</a>
                 <nuxt-link to="/search" class="u-btn u-search">
                     <i class="u-icon el-icon-search"></i>
                 </nuxt-link>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

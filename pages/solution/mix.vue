@@ -8,7 +8,7 @@
                     通过私有云+公有云的部署模式，能将用户私有云业务和公有云业务无缝联接，实现资源的灵活调度。同时，可以将用户孤岛化、碎片化的
                     IT 资源通过公有云无缝连接起来，实现所有 IT 资源的互联互通。
                 </p>
-                <a class="u-btn" href="http://" target="_blank">方案咨询</a>
+                <a class="u-btn" href="/contact" target="_blank">方案咨询</a>
             </div>
         </div>
         <div class="m-tabs wp">

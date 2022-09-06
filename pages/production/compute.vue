@@ -8,8 +8,8 @@
                     基于东云云计算的IaaS基础架构，以PaaS结构为基础，为您打造安全、弹性、快捷的高效云上高性能计算平台，能支持计算资源的弹性定制，降低成本，提高资源利用率，具有极大的灵活性。
                 </p>
                 <div class="m-btn">
-                    <a class="u-btn" href="http://" target="_blank">立即使用</a>
-                    <a class="u-btn u-price" href="http://" target="_blank">产品价格</a>
+                    <a class="u-btn" href="/contact" target="_blank">立即使用</a>
+                    <a class="u-btn u-price" href="/contact" target="_blank">产品价格</a>
                 </div>
             </div>
 

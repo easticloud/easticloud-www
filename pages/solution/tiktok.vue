@@ -7,7 +7,7 @@
                 <p class="u-desc">
                     抖音国际版Tiktok在全球深受欢迎，成为国际上下载量最多的APP之一。由简入深，针对浏览客户、运营客户以及企业高端客户都有完整配套解决方案，解决个人/企业Tiktok问题。
                 </p>
-                <a class="u-btn" href="http://" target="_blank">方案咨询</a>
+                <a class="u-btn" href="/contact" target="_blank">方案咨询</a>
             </div>
         </div>
         <div class="m-tabs wp">
@@ -83,7 +83,8 @@ export default {
 .p-solution {
     .m-box {
         .u-bg {
-            margin: 30px 0;
+            .db;
+            margin: 30px auto;
         }
     }
     .m-plan {

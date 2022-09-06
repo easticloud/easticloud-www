@@ -9,8 +9,8 @@
                     Metal)，提供高性能、资源独享、安全隔离的专属弹性裸金属服务器，同时具备云资源的敏捷性、灵活性与高可用。满足各类应用对高性能及稳定性的需求，同时提供完整的设备管理权限及运维服务。
                 </p>
                 <div class="m-btn">
-                    <a class="u-btn" href="http://" target="_blank">立即使用</a>
-                    <a class="u-btn u-price" href="http://" target="_blank">产品价格</a>
+                    <a class="u-btn" href="/contact" target="_blank">立即使用</a>
+                    <a class="u-btn u-price" href="/contact" target="_blank">产品价格</a>
                 </div>
             </div>
 

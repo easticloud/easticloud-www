@@ -8,9 +8,9 @@
                 <p class="u-desc">快人一步抢占营销红利 持续获取高质询盘</p>
             </div>
             <div class="m-getting">
-                <input class="u-input" type="txt" value="" placeholder="请输入您的姓名" />
-                <input class="u-input" type="txt" value="" placeholder="请输入手机号" />
-                <a class="u-btn" href="http://" target="_blank">获取方案</a>
+                <input class="u-input" type="txt" v-model="name" placeholder="请输入您的姓名" />
+                <input class="u-input" type="txt" v-model="phone" placeholder="请输入手机号" />
+                <span class="u-btn" @click="omSubmit">获取方案</span>
             </div>
             <div class="m-info">
                 <h3>覆盖TikTok全生态服务 让品牌和产品一夜爆红</h3>
@@ -112,8 +112,52 @@
 </template>
 
 <script>
+import { createMessage } from "@/utils/api.js";
 export default {
     name: "ProductionInternational",
+    data: function () {
+        return {
+            name: "",
+            phone: "",
+        };
+    },
+    methods: {
+        checkForm() {
+            if (!this.name) return "请填写您的姓名";
+            if (!this.phone) return "请填写您的手机号码";
+            const phoneReg = /^1[34578]\d{9}$/g;
+            if (!phoneReg.test(this.phone)) return "请填写正确的手机号码";
+            return "";
+        },
+        omSubmit() {
+            const isCheck = this.checkForm();
+            if (isCheck) {
+                this.$message({
+                    message: isCheck,
+                    type: "warning",
+                    offset: 300,
+                });
+            } else {
+                const form = {
+                    name: this.name,
+                    phone: this.phone,
+                    content: "获取解决方案",
+                };
+                createMessage(form)
+                    .then(() => {
+                        this.$notify({
+                            title: "留言成功！",
+                            message: "请耐心等待，我们会尽快联系您。",
+                            type: "success",
+                        });
+                    })
+                    .finally(() => {
+                        this.name = "";
+                        this.phone = "";
+                    });
+            }
+        },
+    },
 };
 </script>
 

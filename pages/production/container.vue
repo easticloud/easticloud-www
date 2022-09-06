@@ -9,8 +9,8 @@
                     EngineE）是云平台上勾线的企业级分布式多租户的Kubernetes容器服务，集成了云平台的云服务器、存储、网络等资源，可一键部署高可用、高性能的Kubernetes集群，支持CI/CD、多集群管理、微服务治理、应用关联、服务与网络管理等业务场景，让您轻松高效地在云端运行Kubernetes容器化应用。
                 </p>
                 <div class="m-btn">
-                    <a class="u-btn" href="http://" target="_blank">立即使用</a>
-                    <a class="u-btn u-price" href="http://" target="_blank">产品价格</a>
+                    <a class="u-btn" href="/contact" target="_blank">立即使用</a>
+                    <a class="u-btn u-price" href="/contact" target="_blank">产品价格</a>
                 </div>
             </div>
 
