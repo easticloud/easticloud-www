@@ -25,8 +25,9 @@
                     <div class="u-item u-after">
                         <h4>售后咨询</h4>
                         <span class="u-desc">开发技术支持、个性化产品培训</span>
-                        <a href="mailto:contact@easticloud.com" class="u-contact"><i
-                                class="el-icon-message"></i>contact@easticloud.com</a>
+                        <a href="mailto:contact@easticloud.com" class="u-contact"
+                            ><i class="el-icon-message"></i>contact@easticloud.com</a
+                        >
                     </div>
                 </div>
                 <div class="m-map">
@@ -34,7 +35,10 @@
                         <baidu-map-marker :position="{ lng: 118.726879, lat: 31.997976 }"></baidu-map-marker>
                         <BaiduMapOverlay pane="labelPane" class="m-address" @draw="draw">
                             <div class="u-logo">
-                                <img src="../../static/images/index/contact/logo.svg" alt="江苏东云互联网络科技有限公司">
+                                <img
+                                    src="../../static/images/index/contact/logo.svg"
+                                    alt="江苏东云互联网络科技有限公司"
+                                />
                             </div>
                             <div class="u-info">
                                 <span class="u-title">江苏东云互联网络科技有限公司</span>
@@ -57,8 +61,10 @@
                     </div>
                     <div class="m-item m-row" @click="onFocus('phone')">
                         <span class="u-label">联系电话</span>
-                        <div class="u-input"
-                            :class="[active == 'phone' ? 'active' : '', rules.phone.isErr ? 'err' : '']">
+                        <div
+                            class="u-input"
+                            :class="[active == 'phone' ? 'active' : '', rules.phone.isErr ? 'err' : '']"
+                        >
                             <i class="el-icon-mobile-phone"></i>
                             <span class="u-desc">+86</span>
                             <input type="text" v-model="form.phone" placeholder="请填写您的联系电话" />
@@ -67,8 +73,10 @@
                     </div>
                     <div class="m-item m-row" @click="onFocus('email')">
                         <span class="u-label">联系邮箱</span>
-                        <div class="u-input"
-                            :class="[active == 'email' ? 'active' : '', rules.email.isErr ? 'err' : '']">
+                        <div
+                            class="u-input"
+                            :class="[active == 'email' ? 'active' : '', rules.email.isErr ? 'err' : '']"
+                        >
                             <i class="el-icon-message"></i>
                             <input type="text" v-model="form.email" placeholder="请填写您的邮箱地址" />
                         </div>
@@ -84,8 +92,10 @@
                     </div>
                     <div class="m-item m-row" @click="onFocus('content')">
                         <span class="u-label">留言内容</span>
-                        <div class="u-textarea"
-                            :class="[active == 'content' ? 'active' : '', rules.content.isErr ? 'err' : '']">
+                        <div
+                            class="u-textarea"
+                            :class="[active == 'content' ? 'active' : '', rules.content.isErr ? 'err' : '']"
+                        >
                             <i class="el-icon-chat-dot-square"></i>
                             <textarea v-model="form.content" placeholder="请填写您的具体需求"></textarea>
                         </div>
@@ -98,19 +108,20 @@
                 </div>
             </div>
         </div>
+        <common-footer></common-footer>
     </div>
 </template>
 <script>
 import { createMessage } from "@/utils/api.js";
-import BaiduMap from 'vue-baidu-map/components/map/Map.vue'
-import BaiduMapMarker from 'vue-baidu-map/components/overlays/Marker.vue'
-import BaiduMapOverlay from 'vue-baidu-map/components/overlays/Overlay.vue'
+import BaiduMap from "vue-baidu-map/components/map/Map.vue";
+import BaiduMapMarker from "vue-baidu-map/components/overlays/Marker.vue";
+import BaiduMapOverlay from "vue-baidu-map/components/overlays/Overlay.vue";
 export default {
     name: "ContactPage",
     components: {
         BaiduMap,
         BaiduMapMarker,
-        BaiduMapOverlay
+        BaiduMapOverlay,
     },
     data: function () {
         return {
@@ -124,73 +135,73 @@ export default {
             rules: {
                 name: {
                     isErr: false,
-                    value: "请填写您的名称（称呼）"
+                    value: "请填写您的名称（称呼）",
                 },
                 phone: {
                     isErr: false,
-                    value: "请填写您的联系电话"
+                    value: "请填写您的联系电话",
                 },
                 email: {
                     isErr: false,
-                    value: "请填写您的邮箱地址"
+                    value: "请填写您的邮箱地址",
                 },
                 addr: {
                     isErr: false,
-                    value: "请填写您的联系地址"
+                    value: "请填写您的联系地址",
                 },
                 content: {
                     isErr: false,
-                    value: "请填写您的具体需求"
+                    value: "请填写您的具体需求",
                 },
             },
             active: "",
 
-            center: { lng: '118.726879', lat: '31.997976' },
+            center: { lng: "118.726879", lat: "31.997976" },
             zoom: 16,
         };
     },
     watch: {},
     methods: {
-        onFocus (key) {
+        onFocus(key) {
             this.active = key;
         },
-        checkForm (form) {
-            Object.keys(form).forEach(key => {
+        checkForm(form) {
+            Object.keys(form).forEach((key) => {
                 if (form[key]) {
-                    this.rules[key].isErr = false
+                    this.rules[key].isErr = false;
 
                     // 判断手机号
-                    const phoneReg = /^1[34578]\d{9}$/g
-                    if (key == 'phone' && !phoneReg.test(form[key])) {
-                        this.rules['phone'].isErr = true
-                        this.rules['phone'].value = '请填写正确的手机号码'
+                    const phoneReg = /^1[34578]\d{9}$/g;
+                    if (key == "phone" && !phoneReg.test(form[key])) {
+                        this.rules["phone"].isErr = true;
+                        this.rules["phone"].value = "请填写正确的手机号码";
                     }
 
                     // 判断邮箱
-                    const emailReg = /^([A-Za-z0-9_\-\.]+)@([A-Za-z0-9_\-\.]+)\.([A-Za-z]{2,6})$/g
-                    if (key == 'email' && !emailReg.test(form[key])) {
-                        this.rules['email'].isErr = true
-                        this.rules['email'].value = '请填写正确的邮箱地址'
+                    const emailReg = /^([A-Za-z0-9_\-\.]+)@([A-Za-z0-9_\-\.]+)\.([A-Za-z]{2,6})$/g;
+                    if (key == "email" && !emailReg.test(form[key])) {
+                        this.rules["email"].isErr = true;
+                        this.rules["email"].value = "请填写正确的邮箱地址";
                     }
 
                     // 判断地址
-                    if (key == 'addr' && form[key].length < 8) {
-                        this.rules['addr'].isErr = true
-                        this.rules['addr'].value = '请填写具体的联系地址'
+                    if (key == "addr" && form[key].length < 8) {
+                        this.rules["addr"].isErr = true;
+                        this.rules["addr"].value = "请填写具体的联系地址";
                     }
 
                     // 判断地址
-                    if (key == 'content' && form[key].length < 20) {
-                        this.rules['content'].isErr = true
-                        this.rules['content'].value = '请填写详细的需求，不少于20个字'
+                    if (key == "content" && form[key].length < 20) {
+                        this.rules["content"].isErr = true;
+                        this.rules["content"].value = "请填写详细的需求，不少于20个字";
                     }
                 } else {
-                    this.rules[key].isErr = true
+                    this.rules[key].isErr = true;
                 }
-            })
+            });
         },
 
-        onReset () {
+        onReset() {
             this.form = {
                 name: "",
                 phone: "",
@@ -202,10 +213,12 @@ export default {
             this.isCheck = false;
         },
 
-        onSubmit () {
-            this.checkForm(this.form)
-            const isSubmit = Object.values(this.rules).map(item => item.isErr).filter(Boolean);
-            console.log(isSubmit)
+        onSubmit() {
+            this.checkForm(this.form);
+            const isSubmit = Object.values(this.rules)
+                .map((item) => item.isErr)
+                .filter(Boolean);
+            console.log(isSubmit);
             !isSubmit.length &&
                 createMessage(this.form).then(() => {
                     this.$notify({
@@ -217,11 +230,11 @@ export default {
                 });
         },
         // 地图标签定位
-        draw ({ el, BMap, map }) {
-            const pixel = map.pointToOverlayPixel(new BMap.Point(118.726679, 31.998076))
-            el.style.left = pixel.x - 124 + 'px'
-            el.style.top = pixel.y - 142 + 'px'
-        }
+        draw({ el, BMap, map }) {
+            const pixel = map.pointToOverlayPixel(new BMap.Point(118.726679, 31.998076));
+            el.style.left = pixel.x - 124 + "px";
+            el.style.top = pixel.y - 142 + "px";
+        },
     },
 };
 </script>
