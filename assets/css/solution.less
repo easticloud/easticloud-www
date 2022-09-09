@@ -71,14 +71,32 @@
             justify-content: space-between;
             gap: 20px;
             .u-link {
-                border: 1px dashed #374567;
                 .size(385px,192px);
                 .flex;
                 justify-content: center;
                 align-items: center;
                 .clip;
                 &.no-border {
+                    .r(5px);
                     border: 0;
+                    background-color: #fafbff;
+                    .flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap:42px;
+                    .u-info{
+                        .flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap:10px;
+                        .fz(18px);
+                        color: #9dabc1;
+                        .u-bold{
+                            .fz(24px);
+                            .bold;
+                            color: #374566;
+                        }
+                    }
                 }
             }
             .u-item {
@@ -86,7 +104,6 @@
                 .size(380px,200px);
                 box-sizing: border-box;
                 padding: 20px;
-                border: 1px dashed #374567;
                 flex-direction: column;
                 .u-title {
                     .x;

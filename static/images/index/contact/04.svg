@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>邮箱</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.254902 0 0 0 0 0.384314 0 0 0 0 0.921569 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="东云官网-联系我们" transform="translate(-1235.000000, -729.000000)">
+            <g id="联系" transform="translate(360.000000, 525.000000)">
+                <g id="编组-19备份-4" transform="translate(609.000000, 75.000000)">
+                    <g id="编组-10" transform="translate(266.000000, 43.000000)">
+                        <g id="邮箱" transform="translate(0.000000, 85.000000)" filter="url(#filter-1)">
+                            <g transform="translate(0.000000, 1.000000)">
+                                <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="28" height="28"></rect>
+                                <path d="M24.2347656,8.19765625 L13.8140625,14.2132812 L3.653125,8.3453125 C3.7515625,6.80859375 5.02851562,5.59179687 6.58984375,5.59179687 L21.3089844,5.59179687 C22.8210937,5.59179687 24.0679687,6.72929687 24.2347656,8.19765625 L24.2347656,8.19765625 Z M24.2539062,10.3523437 L24.2539062,19.5097656 C24.2539062,21.1367187 22.9359375,22.4546875 21.3089844,22.4546875 L6.58984375,22.4546875 C4.96289063,22.4546875 3.64492188,21.1367187 3.64492188,19.5097656 L3.64492188,10.5082031 L13.3492188,16.1109375 C13.6828125,16.3023437 14.0847656,16.2667969 14.3746094,16.0535156 C14.3882813,16.0480469 14.3992187,16.0398437 14.4128906,16.0316406 L24.2539062,10.3523437 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

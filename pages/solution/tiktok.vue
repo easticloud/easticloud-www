@@ -20,13 +20,25 @@
             <h3>关于TikTok</h3>
             <div class="u-box">
                 <span class="u-link no-border">
-                    <img src="../../static/images/index/solution/t1.png" alt="" />
+                    <img src="../../static/images/index/solution/t1.svg" alt="" />
+                    <span class="u-info">
+                        <span class="u-bold">30亿 <b>+</b></span>
+                        <span>下载量</span>
+                    </span>
                 </span>
                 <span class="u-link no-border">
-                    <img src="../../static/images/index/solution/t2.png" alt="" />
+                    <img src="../../static/images/index/solution/t2.svg" alt="" />
+                    <span class="u-info">
+                        <span class="u-bold">150 <b>+</b></span>
+                        <span>涵盖国家地区</span>
+                    </span>
                 </span>
                 <span class="u-link no-border">
-                    <img src="../../static/images/index/solution/t3.png" alt="" />
+                    <img src="../../static/images/index/solution/t3.svg" alt="" />
+                    <span class="u-info">
+                        <span class="u-bold">12亿 <b>+</b></span>
+                        <span>月活用户</span>
+                    </span>
                 </span>
             </div>
         </div>
@@ -38,7 +50,7 @@
             <h3>方案优势</h3>
             <div class="m-plan">
                 <div class="u-info">
-                    <img class="u-logo" src="../../static/images/index/solution/logo.png" />
+                    <img class="u-logo" src="../../static/images/index/solution/logo.svg" />
                     <span class="u-desc"
                         >TikTok提供了独一无二的广告产品解决方案及沉浸式的广告形式，建立了品牌与用户之间高效、深度的连接。TikTok
                         Ads是字节跳动旗下面向全球广告主的营销服务品牌。整合了TikTok，Vigo Video，TopBuzz，BuzzVideo，New
@@ -46,7 +58,7 @@
                     >
                     <a href="" arget="_blank" class="u-btn"><span>立即加入</span></a>
                 </div>
-                <img class="u-img" src="../../static/images/index/solution/img.png" />
+                <img class="u-img" src="../../static/images/index/solution/img.svg" />
             </div>
         </div>
         <div class="m-box wp" id="tab4">

@@ -20,13 +20,13 @@
                     <div class="u-item u-pre">
                         <h4>售前咨询</h4>
                         <span class="u-desc">法定工作日：9:00-18:00</span>
-                        <span class="u-contact"><i class="el-icon-phone"></i>025-82229268</span>
+                        <span class="u-contact"><img src="../../static/images/index/contact/03.svg" /> 025-82229268</span>
                     </div>
                     <div class="u-item u-after">
                         <h4>售后咨询</h4>
                         <span class="u-desc">开发技术支持、个性化产品培训</span>
                         <a href="mailto:contact@easticloud.com" class="u-contact"
-                            ><i class="el-icon-message"></i>contact@easticloud.com</a
+                            ><img src="../../static/images/index/contact/04.svg" /> contact@easticloud.com</a
                         >
                     </div>
                 </div>

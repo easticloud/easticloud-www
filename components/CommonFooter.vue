@@ -20,7 +20,9 @@
                 <span class="u-name">江苏东云互联网络科技有限公司</span>
             </div>
         </div>
-        <div class="c-footer-beian">备案序号：苏ICP备20035792号</div>
+        <div class="c-footer-beian">
+            备案序号： <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备20035792号</a>
+        </div>
     </div>
 </template>
 
@@ -49,7 +51,7 @@ export default {
     background-color: #000c30;
 
     .wp {
-        padding:50px 0;
+        padding: 50px 0;
         .flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -77,15 +79,19 @@ export default {
     }
 }
 .c-footer-logo {
-    .u-name{
-        .db;.mt(10px);
+    .u-name {
+        .db;
+        .mt(10px);
     }
 }
 
 .c-footer-beian {
-    border-top:1px solid #1f2748;
-    padding:40px 0;
+    color: @color;
+    border-top: 1px solid #1f2748;
+    padding: 40px 0;
     .x;
-    color:@color;
+    a {
+        color: @color;
+    }
 }
 </style>
