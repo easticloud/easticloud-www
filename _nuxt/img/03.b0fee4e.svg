@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>电话_填充</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.254902 0 0 0 0 0.384314 0 0 0 0 0.921569 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="东云官网-联系我们" transform="translate(-663.000000, -732.000000)">
+            <g id="联系" transform="translate(360.000000, 525.000000)">
+                <g id="编组-19" transform="translate(0.000000, 75.000000)">
+                    <g id="编组-10" transform="translate(303.000000, 43.000000)">
+                        <g id="电话_填充" transform="translate(0.000000, 85.000000)" filter="url(#filter-1)">
+                            <g transform="translate(0.000000, 4.000000)">
+                                <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                                <path d="M18.09262,16.58212 C18.75928,15.42192 18.39002,14.53084 17.20942,13.63926 C15.82158,12.59112 14.46526,11.8861 13.49002,13.01544 C13.49002,13.01544 12.45506,14.2475 9.4094,11.36436 C5.8678,7.98836 7.35418,6.79102 7.35418,6.79102 C8.58592,5.5527 7.80294,4.6289 6.7699,3.2298 C5.73694,1.83072 4.69346,1.3879 3.19542,2.59118 C0.30868,4.91004 4.37916,10.35478 6.4372,12.4719 L6.43712,12.47206 C6.43712,12.47206 9.5667,15.70918 11.53608,16.78682 L12.58962,17.37592 C14.10068,18.15134 15.79796,18.5063 16.99288,17.78626 C16.99288,17.7863 17.56888,17.49002 18.09262,16.58212 Z" id="路径" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
