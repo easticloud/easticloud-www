@@ -8,7 +8,10 @@
             <div class="m-certification-content">
                 <div class="u-item" v-for="(item, i) in data" :key="i">
                     <i class="u-item__img"><img :src="item.image" :alt="item.title" /></i>
-                    <span class="u-item__text">{{ item.title }}</span>
+                    <span class="u-item__text">
+                        <span>{{ item.title1 }}</span>
+                        <span>{{ item.title2 }}</span>
+                    </span>
                 </div>
             </div>
         </div>
@@ -21,19 +24,22 @@ export default {
             data: [
                 {
                     image: "/images/index/certification/1.png",
-                    title: "ITSS®云计算服务能力 标准符合性证书",
+                    title1: "ITSS®云计算服务能力",
+                    title2: "标准符合性证书",
                 },
                 {
                     image: "/images/index/certification/2.png",
-                    title: "质量管理体系认证 ISO9001",
+                    title1: "质量管理体系认证",
+                    title2: "ISO9001",
                 },
                 {
                     image: "/images/index/certification/3.png",
-                    title: "信息安全管理体系认证ISO27001",
+                    title1: "信息安全管理体系认证",
+                    title2: "ISO27001",
                 },
                 {
                     image: "/images/index/certification/4.png",
-                    title: "可信云服务认证",
+                    title1: "可信云服务认证",
                 },
             ],
         };
@@ -64,7 +70,34 @@ export default {
         &__text {
             .db;
             .fz(16px,3);
-            color:#374567;
+            color: #374567;
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .m-certification {
+        padding: 30px 0;
+        .m-certification-content {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            .u-item {
+                .size(45%,170px);
+                .u-item__img {
+                    .db;
+                    .size(100px);
+                    .auto(x);
+                    img {
+                        max-height: 100%;
+                    }
+                }
+                .u-item__text {
+                    .flex;
+                    flex-direction: column;
+                    .mt(10px);
+                    .fz(14px,2);
+                }
+            }
         }
     }
 }

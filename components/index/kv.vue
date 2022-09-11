@@ -1,8 +1,9 @@
 <template>
     <div class="m-slider">
-        <el-carousel height="550px" direction="horizontal" :autoplay="true" @change="changeHandle">
-            <el-carousel-item v-for="(item, i) in data" :key="i">
-                <a :href="item.href" :target="item.target"><img :src="item.src" /></a>
+        <el-carousel direction="horizontal" :autoplay="true" @change="changeHandle">
+            <el-carousel-item class="u-item" v-for="(item, i) in data" :key="i">
+                <a class="u-link" :href="item.href" :target="item.target" :style="`background-image: url(${item.src})`">
+                </a>
             </el-carousel-item>
         </el-carousel>
     </div>
@@ -20,8 +21,7 @@ export default {
             ],
         };
     },
-    async asyncData({ params }) {
-    },
+    async asyncData({ params }) {},
     methods: {
         changeHandle(index) {
             this.$store.commit("home/setKVMode", this.data[index].mode);
@@ -29,11 +29,25 @@ export default {
     },
 };
 </script>
-<style scoped lang="less">
-.m-slider .el-carousel .el-carousel__item a {
-    .flex;
-    img {
-        .auto(x);
+<style lang="less">
+.m-slider .u-link {
+    .db;
+    .h(550px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.el-carousel__container {
+    height: 550px;
+}
+@media screen and (max-width: 750px) {
+    .el-carousel__container {
+        height: 176px;
+    }
+    .m-slider .u-link {
+        .h(176px);
+        background-position: center top;
+        background-size: 150%;
     }
 }
 </style>

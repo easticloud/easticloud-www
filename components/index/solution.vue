@@ -21,7 +21,7 @@
                     <div class="u-info">
                         <span class="u-title">{{ solutions.title }}</span>
                         <span class="u-desc">{{ solutions.desc }}</span>
-                        <span><nuxt-link class="u-more" :to="solutions.href" target="_blank">了解详情</nuxt-link></span>
+                        <nuxt-link class="u-more" :to="solutions.href" target="_blank">了解详情</nuxt-link>
                     </div>
                 </div>
             </div>
@@ -124,16 +124,52 @@ export default {
                 .color(#7488a4);
             }
             .u-more {
-                @color:#4162eb;
+                @color: #4162eb;
                 .dbi;
                 .r(3px);
                 .fz(16px);
                 .color(@color);
+                .size(120px,36px);
+                .x;
+                box-sizing: border-box;
                 padding: 5px 12px;
                 border: 1px solid @color;
-                &:hover{
+                &:hover {
                     background-color: @color;
-                    color:#fff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .m-solution {
+        padding: 30px 0;
+    }
+    .m-solution-content {
+        .u-tabs {
+            .fz(12px);
+            .u-tab {
+                padding: 10px 20px;
+            }
+        }
+        .u-solution {
+            flex-direction: column;
+            align-items: center;
+            .u-img {
+                .w(240px);
+            }
+            .u-info {
+                padding: 0 10px;
+                .u-title {
+                    .fz(16px);
+                }
+                .u-desc {
+                    .fz(12px);
+                }
+                .u-more {
+                    .auto(x);
+                    .fz(14px);
                 }
             }
         }

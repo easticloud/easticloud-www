@@ -121,4 +121,19 @@ export default {
         }
     }
 }
+@media screen and(max-width:750px) {
+    .m-production {
+        padding: 30px 0;
+    }
+    .m-production-content {
+        .u-list {
+            .mt(0);
+            .flex;
+            justify-content: center;
+            .u-item {
+                zoom: 0.6;
+            }
+        }
+    }
+}
 </style>

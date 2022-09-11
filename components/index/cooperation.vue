@@ -83,4 +83,9 @@ export default {
         }
     }
 }
+@media screen and (max-width:750px) {
+    .m-cooperation{
+        padding: 30px 0;
+    }
+}
 </style>

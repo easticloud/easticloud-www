@@ -3,7 +3,7 @@
         <div class="wp">
             <div class="c-header-left">
                 <a class="c-header-logo" href="/">
-                    <component :is="require(`../assets/img/logo.svg?inline`)" :fill="fill_color" />
+                    <component class="u-svg" :is="require(`../assets/img/logo.svg?inline`)" :fill="fill_color" />
                 </a>
                 <div class="c-header-nav">
                     <div class="u-item" v-for="(item, i) in data" :key="i">
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-    data () {
+    data() {
         return {
             data: [
                 {
@@ -62,7 +62,7 @@ export default {
             ],
         };
     },
-    async asyncData ({ params }) {
+    async asyncData({ params }) {
         return {};
     },
     computed: {
@@ -80,13 +80,13 @@ export default {
     },
     watch: {
         $route: {
-            handler (to) {
-                const path = to.path.replace("/", "")
-                path ? this.$store.commit("home/setKVMode", 'blue') : this.$store.commit("home/setKVMode", 'dark');
+            handler(to) {
+                const path = to.path.replace("/", "");
+                path ? this.$store.commit("home/setKVMode", "blue") : this.$store.commit("home/setKVMode", "dark");
             },
             immediate: true,
-        }
-    }
+        },
+    },
 };
 </script>
 
@@ -245,5 +245,30 @@ export default {
     @color: rgba(0, 0, 0, 0.8);
     @hover: #4162eb;
     .c-header-theme(@color, @hover);
+}
+@media screen and (max-width: 750px) {
+    .c-header .wp {
+        .h(46px);
+    }
+    .c-header-logo {
+        .mr(20px);
+        .u-svg {
+            .size(80px,36px);
+        }
+    }
+    .c-header-nav {
+        .mt(0);
+        .u-item {
+            flex-shrink: 0;
+            .u-link {
+                .fz(12px);
+                padding: 10px 0;
+                .mr(10px);
+            }
+        }
+    }
+    .c-header-subnav .u-child{
+        .fz(12px);
+    }
 }
 </style>

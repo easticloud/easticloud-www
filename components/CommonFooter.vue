@@ -94,4 +94,30 @@ export default {
         color: @color;
     }
 }
+@media screen and (max-width: 750px) {
+    .c-footer .wp {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 30px 0;
+        .c-footer-link {
+            zoom: 0.5;
+            .u-row .u-label {
+                .mr(20px);
+            }
+            .u-link {
+                .mr(20px);
+            }
+            .u-label + .u-value {
+                .mr(30px);
+            }
+        }
+        .c-footer-logo{
+            zoom: 0.4;
+        }
+    }
+    .c-footer-beian{
+        padding: 10px 0;
+        .fz(12px);
+    }
+}
 </style>

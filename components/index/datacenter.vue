@@ -103,4 +103,21 @@ export default {
         }
     }
 }
+@media screen and (max-width: 750px) {
+    .m-datacenter {
+        padding: 30px 0;
+        .m-datacenter-content {
+            .pt(0);
+            .m-area {
+                zoom: 0.5;
+                .u-area b {
+                    .mr(2px);
+                }
+            }
+            .m-info{
+                zoom: 0.5;
+            }
+        }
+    }
+}
 </style>

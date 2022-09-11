@@ -42,7 +42,7 @@
             background: url(../../static/images/index/production/compute.png) center right #fff no-repeat;
         }
         &.m-international {
-            background: url(../../static/images/index/production/tiktok.png) center right #fff no-repeat;
+            background: url(../../static/images/index/production/tiktok.png) center center #fff no-repeat;
             .u-desc {
                 .pt(30px);
                 &.u-first {
@@ -171,6 +171,68 @@
                     .u-title {
                         .fz(20px);
                         .color(#374567);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:750px) {
+    .p-production {
+        .wp {
+            max-width: 100%;
+        }
+        .m-production-box {
+            zoom: 0.5;
+            h2 {
+                .fz(18px);
+            }
+            .u-desc {
+                .fz(14px);
+            }
+        }
+        .m-tabs {
+            .mt(20px);
+            .u-tab {
+                .fz(16px,36px);
+                .h(36px);
+            }
+        }
+        .m-info-box {
+            zoom: 0.5;
+            padding: 20px;
+        }
+        .m-getting {
+            .flex;
+            .pb(20px);
+            flex-wrap: wrap;
+            .u-input {
+                .size(40%,32px);
+                .fz(14px,32px);
+            }
+            .u-btn{
+                .fz(16px);
+                .size(220px,32px);
+                .fz(14px,32px);
+            }
+        }
+        .m-info {
+            zoom: 0.5;
+            h3 {
+                .fz(18px,100px);
+            }
+            .m-box {
+                justify-content: space-around;
+                .m-item {
+                    .u-img {
+                        .size(30px);
+                    }
+                    .u-txt {
+                        .fz(14px);
+                        .u-title {
+                            .fz(16px);
+                        }
                     }
                 }
             }
