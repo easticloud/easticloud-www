@@ -42,9 +42,30 @@
                 </span>
             </div>
         </div>
-        <div class="m-box" id="tab2">
+        <div class="m-box m-bg" id="tab2">
             <h3 class="wp">发展趋势</h3>
-            <img class="u-bg" src="../../static/images/index/solution/bg.png" alt="" srcset="" />
+            <div class="m-txt">
+                <span class="u-txt u-year u-year-1">2018</span>
+                <span class="u-txt u-year u-year-2">2019</span>
+                <span class="u-txt u-year u-year-3">2020</span>
+                <span class="u-txt u-year u-year-4">2021</span>
+                <span class="u-txt u-txt-1">
+                    <span>获得日本、泰国App Store年度</span>
+                    <span>热门免费应用榜单第一名</span>
+                </span>
+                <span class="u-txt u-txt-2">
+                    <span>全球下载量7.4亿次 </span>
+                    <span>荣获全球下载第一名</span>
+                </span>
+                <span class="u-txt u-txt-3">
+                    <span>全球下载量8.5亿 </span>
+                    <span>荣获全球下载榜第一名</span>
+                </span>
+                <span class="u-txt u-txt-4">
+                    <span>全球用户覆盖150个国家 </span>
+                    <span>全球最受欢迎的短视频App</span>
+                </span>
+            </div>
         </div>
         <div class="m-box wp" id="tab3">
             <h3>方案优势</h3>
@@ -90,48 +111,4 @@ export default {
 
 <style lang="less">
 @import "~@/assets/css/solution.less";
-</style>
-<style lang="less">
-.p-solution {
-    .m-box {
-        .u-bg {
-            .db;
-            margin: 30px auto;
-        }
-    }
-    .m-plan {
-        .flex;
-        .mt(30px);
-        gap: 80px;
-        align-items: center;
-        .u-img {
-            flex-shrink: 0;
-            .size(415px,225px);
-        }
-        .u-info {
-            .flex;
-            flex-direction: column;
-            .u-logo {
-                .size(228px,56px);
-                flex-shrink: 0;
-                .mb(20px);
-            }
-            .u-desc {
-                .fz(18px,2);
-                .color(#7488a4);
-            }
-            .u-btn {
-                .mt(20px);
-                span {
-                    padding: 5px 20px;
-                    border: 1px solid #4162eb;
-                    .r(3px);
-                    .mr(20px);
-                    background-color: #fff;
-                    color: #4162eb;
-                }
-            }
-        }
-    }
-}
 </style>

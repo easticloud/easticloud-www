@@ -39,7 +39,26 @@
             <h3>架构示例</h3>
             <div class="m-example">
                 <div class="m-img-box">
-                    <img src="../../static/images/index/solution/cloud.png" alt="" />
+                    <span class="u-txt u-pop" v-for="item in 9" :class="`u-pop-${item}`" :key="item">pop</span>
+                    <span class="u-txt u-txt-1">
+                        <span>Domestic</span>
+                        <span>headquarters</span>
+                    </span>
+                    <span class="u-txt u-txt-2">Public Cloud </span>
+                    <span class="u-txt u-txt-3">
+                        <span>International</span>
+                        <span>data Center</span>
+                    </span>
+                    <span class="u-txt u-txt-4">
+                        <span>Dongyun</span>
+                        <span>Edge cloud networking</span>
+                    </span>
+                    <span class="u-txt u-title">
+                        <span>Cloud</span>
+                        <span>Networking</span>
+                        <span>Backbone</span>
+                    </span>
+                    <img src="../../static/images/index/solution/cloud.svg" class="u-img" />
                 </div>
                 <div class="m-info-box">
                     <h4 class="u-title">架构</h4>
@@ -124,58 +143,4 @@ export default {
 
 <style lang="less">
 @import "~@/assets/css/solution.less";
-</style>
-
-<style scoped lang="less">
-.p-solution {
-    h3 {
-        .mb(30px);
-    }
-    .m-example {
-        .flex;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .m-img-box {
-        flex-shrink: 0;
-        .w(710px);
-        .x;
-        .pr;
-    }
-    .m-info-box {
-        .flex;
-        flex-direction: column;
-        gap: 20px;
-        .u-title {
-            .fz(24px,1);
-        }
-        .u-item {
-            .flex;
-            .fz(18px,2);
-            .color(#7488a4);
-            gap: 14px;
-            i {
-                flex-shrink: 0;
-                .size(16px);
-                .mt(10px);
-                .r(50%);
-            }
-
-            .yellow {
-                background-color: #ffe581;
-            }
-            .blue {
-                background-color: #a7b6f3;
-            }
-            .purple {
-                background-color: #e2c0fe;
-            }
-            .green {
-                background-color: #70dad4;
-            }
-        }
-    }
-}
 </style>
