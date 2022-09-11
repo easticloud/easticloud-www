@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="446px" height="398px" viewBox="0 0 446 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图</title>
+    <defs>
+        <linearGradient x1="32.2228326%" y1="0%" x2="82.5606283%" y2="92.4519857%" id="linearGradient-1">
+            <stop stop-color="#ECF0FF" offset="0%"></stop>
+            <stop stop-color="#D4DCFF" offset="99.8349917%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="38.3403524%" x2="100%" y2="62.5866021%" id="linearGradient-2">
+            <stop stop-color="#4675E7" stop-opacity="0.561724896" offset="0%"></stop>
+            <stop stop-color="#A3B1EB" stop-opacity="0.315784801" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="38.3403524%" x2="100%" y2="62.5866021%" id="linearGradient-3">
+            <stop stop-color="#416FDE" stop-opacity="0.561724896" offset="0%"></stop>
+            <stop stop-color="#A3B1EB" stop-opacity="0.315784801" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="23.3352661%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#C4D2F3" offset="0%"></stop>
+            <stop stop-color="#7E93EA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="东云官网-解决方案-混合云" transform="translate(-443.000000, -1076.000000)">
+            <g id="示例" transform="translate(1.000000, 925.000000)">
+                <g id="编组-26" transform="translate(362.000000, 151.000000)">
+                    <g id="图" transform="translate(80.000000, 0.000000)">
+                        <circle id="椭圆形" fill="url(#linearGradient-1)" cx="227" cy="202" r="180"></circle>
+                        <g id="编组-20" transform="translate(29.000000, 6.000000)">
+                            <circle id="椭圆形备份-7" stroke="url(#linearGradient-2)" cx="180" cy="196" r="179.5"></circle>
+                            <circle id="椭圆形备份-8" stroke="url(#linearGradient-3)" transform="translate(215.000000, 196.000000) scale(-1, 1) translate(-215.000000, -196.000000) " cx="215" cy="196" r="179.5"></circle>
+                            <circle id="椭圆形备份-9" stroke="url(#linearGradient-3)" transform="translate(197.000000, 180.000000) scale(-1, 1) rotate(-270.000000) translate(-197.000000, -180.000000) " cx="197" cy="180" r="179.5"></circle>
+                            <circle id="椭圆形备份-10" stroke="url(#linearGradient-3)" transform="translate(197.000000, 212.000000) scale(-1, -1) rotate(-270.000000) translate(-197.000000, -212.000000) " cx="197" cy="212" r="179.5"></circle>
+                        </g>
+                        <g id="编组-25">
+                            <g id="编组-21" transform="translate(80.000000, 17.000000)">
+                                <circle id="椭圆形" fill="#A7B6F3" cx="141" cy="6" r="6"></circle>
+                                <circle id="椭圆形备份-23" fill="#FFFFFF" cx="26" cy="71" r="6"></circle>
+                                <circle id="椭圆形备份-24" fill="#FFFFFF" cx="38" cy="314" r="6"></circle>
+                                <circle id="椭圆形备份-25" fill="#FFFFFF" cx="267" cy="71" r="6"></circle>
+                                <circle id="椭圆形备份-26" fill="#FFFFFF" cx="261" cy="308" r="6"></circle>
+                                <circle id="椭圆形备份-11" fill="#748CEF" cx="275" cy="43" r="8"></circle>
+                                <circle id="椭圆形备份-12" fill="#748CEF" cx="275" cy="328" r="8"></circle>
+                                <circle id="椭圆形备份-13" fill="#A7B6F3" cx="146" cy="364" r="5"></circle>
+                                <circle id="椭圆形备份-14" fill="#748CEF" cx="12" cy="320" r="8"></circle>
+                                <circle id="椭圆形备份-15" fill="#748CEF" cx="8" cy="51" r="8"></circle>
+                            </g>
+                            <g id="编组-24" transform="translate(41.425748, 40.511913)" stroke="#748CEF" stroke-linecap="square">
+                                <line x1="315.116527" y1="18.9761742" x2="357.031976" y2="-1.84741111e-13" id="直线-5"></line>
+                                <line x1="3.97903932e-13" y1="12.0090889" x2="44.1485031" y2="24.9670853" id="直线-5备份-3"></line>
+                                <line x1="314.211162" y1="304.357284" x2="358.517908" y2="316.763422" id="直线-5备份"></line>
+                                <line x1="5.21116178" y1="298.357284" x2="49.5179077" y2="310.763422" id="直线-5备份-2" transform="translate(27.364535, 304.560353) scale(1, -1) translate(-27.364535, -304.560353) "></line>
+                            </g>
+                            <g id="编组-23">
+                                <circle id="椭圆形" fill="#FFE581" cx="413" cy="30" r="24"></circle>
+                                <circle id="椭圆形备份-16" fill="#A7B6F3" cx="413" cy="362" r="24"></circle>
+                                <circle id="椭圆形备份-17" fill="#E2C0FE" cx="30" cy="357" r="24"></circle>
+                                <circle id="椭圆形备份-18" fill="#70DAD4" cx="30" cy="46" r="24"></circle>
+                                <circle id="椭圆形备份-19" stroke="url(#linearGradient-4)" cx="30" cy="50" r="29.5"></circle>
+                                <circle id="椭圆形备份-20" stroke="url(#linearGradient-4)" cx="416" cy="30" r="29.5"></circle>
+                                <circle id="椭圆形备份-21" stroke="url(#linearGradient-4)" cx="413" cy="362" r="29.5"></circle>
+                                <circle id="椭圆形备份-22" stroke="url(#linearGradient-4)" cx="33" cy="357" r="29.5"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
