@@ -83,7 +83,108 @@
                 <h3><i>▶</i>产品类型</h3>
                 <p class="u-section">
                     <strong>物理主机目前提供以下四种类型的硬件配置</strong>
-                    <span><img src="../../static/images/index/production/hardware.png" alt="" /></span>
+                    <table class="m-table" border="1" b cellspacing="1px" bordercolor="#e1e6f1">
+                        <tr>
+                            <th><span>参数类型</span></th>
+                            <th><span>SATA存储型</span></th>
+                            <th><span>SAS标准型</span></th>
+                            <th><span>SSD高性能型</span></th>
+                            <th><span>SSD+GPU超高性能型</span></th>
+                        </tr>
+                        <tr>
+                            <td><span>CPU</span></td>
+                            <td>
+                                <div class="u-info">
+                                    <span>1 x 英特尔®至强®</span>
+                                    <span>V4处理器2620</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>2 x 英特尔®至强®</span>
+                                    <span>V4处理器2620</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>1 x 英特尔®至强®</span>
+                                    <span>V4处理器2630</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>2 x 英特尔®至强®</span>
+                                    <span>V4处理器2630</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>内存</span></td>
+                            <td><span>64G</span></td>
+                            <td><span>128G</span></td>
+                            <td><span>192G</span></td>
+                            <td><span>192G</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>硬盘类型</span></td>
+                            <td>
+                                <div class="u-info">
+                                    <span>系统盘：</span>
+                                    <span>1 x 100G SSD缓存盘</span>
+                                    <span>1 x 200G SSD数据盘</span>
+                                    <span>10 x 4T SATA</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>6 x 1.2T SAS</span>
+                                    <span>Raid卡2G 缓存</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>系统盘：</span>
+                                    <span>1 x 100G SSD缓存盘</span>
+                                    <span>2 x 3.2T 闪存卡</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>系统盘：</span>
+                                    <span>1 x 100G SSD缓存盘</span>
+                                    <span>2 x 3.2T 闪存卡</span>
+                                    <span>2 x Tesla P100卡</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span>网络</span></td>
+                            <td>
+                                <div class="u-info">
+                                    <span>2 x 10G</span>
+                                    <span>1 Management</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>2 x 10G</span>
+                                    <span>1 Management</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>2 x 10G</span>
+                                    <span>1 Management</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="u-info">
+                                    <span>2 x 10G</span>
+                                    <span>1 Management</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </table> 
                 </p>
             </div>
             <div class="m-info-box" id="tab4">
