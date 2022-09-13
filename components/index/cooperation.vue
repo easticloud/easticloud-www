@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="m-cooperation-footer">
-                <a href="" class="u-more">点击查看更多 →</a>
+                <a href="/partner" target="_blank" class="u-more">点击查看更多 →</a>
             </div>
         </div>
     </div>
