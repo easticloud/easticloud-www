@@ -121,7 +121,7 @@ export default {
         }
     }
 }
-@media screen and(max-width:750px) {
+@media screen and(max-width:@phone) {
     .m-production {
         padding: 30px 0;
     }

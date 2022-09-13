@@ -142,13 +142,14 @@ export default {
         }
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: @phone) {
     .m-solution {
         padding: 30px 0;
     }
     .m-solution-content {
         .u-tabs {
             .fz(12px);
+            justify-content: center;
             .u-tab {
                 padding: 10px 20px;
             }

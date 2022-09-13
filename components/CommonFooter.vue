@@ -94,7 +94,7 @@ export default {
         color: @color;
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: @phone) {
     .c-footer .wp {
         flex-wrap: nowrap;
         justify-content: space-around;

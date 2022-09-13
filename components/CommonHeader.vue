@@ -246,8 +246,9 @@ export default {
     @hover: #4162eb;
     .c-header-theme(@color, @hover);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: @phone) {
     .c-header .wp {
+        padding:0 10px;
         .h(46px);
     }
     .c-header-logo {

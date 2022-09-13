@@ -218,7 +218,6 @@ export default {
             const isSubmit = Object.values(this.rules)
                 .map((item) => item.isErr)
                 .filter(Boolean);
-            console.log(isSubmit);
             !isSubmit.length &&
                 createMessage(this.form).then(() => {
                     this.$notify({
