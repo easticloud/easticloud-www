@@ -40,7 +40,7 @@ export default {
 .el-carousel__container {
     height: 550px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: @phone) {
     .el-carousel__container {
         height: 176px;
     }

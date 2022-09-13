@@ -103,11 +103,11 @@ export default {
         }
     }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: @phone) {
     .m-datacenter {
         padding: 30px 0;
         .m-datacenter-content {
-            .pt(0);
+            padding:0 20px;
             .m-area {
                 zoom: 0.5;
                 .u-area b {

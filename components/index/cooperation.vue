@@ -69,6 +69,11 @@ export default {
         .x;
     }
 }
+@media screen and (max-width:@phone){
+    .m-cooperation-content {
+        padding:0 20px;
+    }
+}
 .m-cooperation-footer{
     .x;
     .pointer;
@@ -83,7 +88,7 @@ export default {
         }
     }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:@phone) {
     .m-cooperation{
         padding: 30px 0;
     }
