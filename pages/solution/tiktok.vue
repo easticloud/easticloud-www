@@ -12,7 +12,7 @@
         </div>
         <div class="m-tabs wp">
             <a href="#tab1" class="u-tab active">关于TikTok</a>
-            <a href="#tab2" class="u-tab">发展趋势</a>
+            <a href="#tab2" class="u-tab u-phone">发展趋势</a>
             <a href="#tab3" class="u-tab">方案优势</a>
             <a href="#tab4" class="u-tab">客户案例</a>
         </div>
@@ -42,7 +42,7 @@
                 </span>
             </div>
         </div>
-        <div class="m-box m-bg" id="tab2">
+        <div class="m-box m-bg u-phone" id="tab2">
             <h3 class="wp">发展趋势</h3>
             <div class="m-txt-box">
                 <div class="m-txt">

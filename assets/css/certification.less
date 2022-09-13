@@ -150,15 +150,26 @@
                 gap: 20px;
                 .m-item {
                     width: 100%;
+                    padding: 20px 15px;
+                    min-height: 100px;
+                    height: auto;
+                    .fz(14px);
+                    .u-img {
+                        .mb(0);
+                    }
                 }
                 &.m-rank .m-item {
                     width: 100%;
+                    height: auto;
+                    min-height: 100px;
                     justify-content: flex-start;
-                    .u-year{
+                    .mb(0);
+                    .u-year {
                         flex-shrink: 0;
                     }
-                    .u-txt{
+                    .u-txt {
                         .fz(18px);
+                        .x(left);
                     }
                 }
             }

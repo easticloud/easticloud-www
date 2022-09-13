@@ -96,7 +96,7 @@
                     </div>
                     <div class="m-item">
                         <span class="u-year">2021年</span>
-                        <span class="u-txt">科技风云榜-年度最具潜力创业公司</span>
+                        <span class="u-txt">科技风云榜 - 年度最具潜力创业公司</span>
                     </div>
                 </div>
             </div>

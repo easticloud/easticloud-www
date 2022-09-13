@@ -98,6 +98,7 @@ export default {
 @media screen and (max-width: @phone) {
     .c-footer .wp {
         padding: 30px 20px 20px 20px;
+        overflow: auto;
         .c-footer-link {
             .fz(12px);
             .u-row .u-label {

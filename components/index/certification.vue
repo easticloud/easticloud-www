@@ -82,7 +82,6 @@ export default {
             .u-item {
                 .size(100%,110px);
                 .flex;
-                gap: 30px;
                 align-items: center;
                 .u-item__img {
                     .flex;
@@ -92,6 +91,7 @@ export default {
                 .u-item__text {
                     .flex;
                     .fz(14px,2);
+                    .w(240px);
                     flex-direction: column;
                 }
             }
