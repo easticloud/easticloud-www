@@ -386,9 +386,9 @@
             }
         }
         .m-box {
-            padding: 20px 0;
+            padding: 20px 5px;
             h3 {
-                .fz(18px);
+                .fz(16px);
                 .mb(20px);
             }
             .u-box {
@@ -404,9 +404,16 @@
                 }
                 .u-link {
                     .h(80px);
-                }
-                .no-border {
-                    zoom: 0.5;
+                    &.no-border {
+                        zoom: 0.5;
+                        gap:20px;
+                        img {
+                            max-width: 80%;
+                        }
+                        .u-info {
+                            .fz(16px);
+                        }
+                    }
                 }
             }
             .m-example {
@@ -415,18 +422,18 @@
                     zoom: 0.3;
                 }
             }
-            .m-plan { 
+            .m-plan {
                 .mt(0);
-                gap:0;
+                gap: 0;
                 justify-content: space-around;
-                .u-info{
+                .u-info {
                     zoom: 0.5;
                     .ml(5px);
                 }
                 .u-img {
                     zoom: 0.4;
                 }
-                .u-desc{
+                .u-desc {
                     .fz(14px);
                 }
             }
@@ -434,6 +441,5 @@
         .m-bg .m-txt {
             zoom: 0.32;
         }
-
     }
 }
