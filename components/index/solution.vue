@@ -64,7 +64,6 @@ export default {
     methods: {
         changeTab(i) {
             this.tabIndex = i;
-            console.log(this.tabIndex);
         },
     },
 };
@@ -122,6 +121,7 @@ export default {
                 letter-spacing: 1px;
                 .fz(16px,2);
                 .color(#7488a4);
+                font-weight: 300;
             }
             .u-more {
                 @color: #4162eb;

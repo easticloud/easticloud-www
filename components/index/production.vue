@@ -109,6 +109,7 @@ export default {
             .fz(16px,1.8);
             .color(#7488a4);
             .break(4);
+            font-weight: 300;
         }
         .u-more {
             .pa;

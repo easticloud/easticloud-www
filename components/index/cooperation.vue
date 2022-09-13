@@ -115,6 +115,9 @@ export default {
         margin-top: -1px;
         padding: 20px 0;
         .x;
+        &:hover{
+            background-color:#fafbfc;
+        }
     }
 }
 .m-cooperation-footer {
