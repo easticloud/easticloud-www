@@ -9,6 +9,7 @@
         align-items: flex-start;
         gap: 10px;
         background: url(../../static/images/index/contact/bg.png) center center no-repeat;
+        background-size: auto 100%;
         .u-txt {
             width: 100%;
         }
@@ -18,7 +19,7 @@
         }
         .u-desc {
             .fz(18px,32px);
-            .w(730px);
+            max-width: 730px;
             color: #7488a4;
             letter-spacing: 1px;
         }
@@ -67,6 +68,9 @@
                 box-sizing: border-box;
                 flex-direction: column;
                 gap: 20px;
+                background-position: 50px bottom;
+                background-repeat: no-repeat;
+                background-color: #fafbff;
                 h4 {
                     .fz(24px,50px);
                     .bold;
@@ -87,10 +91,10 @@
                     }
                 }
                 &.u-pre {
-                    background: url(../../static/images/index/contact/01.svg) 50px bottom #fafbff no-repeat;
+                    background-image: url(../../static/images/index/contact/01.svg);
                 }
                 &.u-after {
-                    background: url(../../static/images/index/contact/02.svg) 50px bottom #fafbff no-repeat;
+                    background-image: url(../../static/images/index/contact/02.svg);
                 }
             }
         }
@@ -106,10 +110,14 @@
                 .pa;
                 .flex;
                 .size(350px,115px);
+                align-items: center;
                 gap: 15px;
                 box-sizing: border-box;
-                background: url(../../static/images/index/contact/border.png) center center no-repeat;
-                padding: 15px;
+                background-image: url(../../static/images/index/contact/border.png);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                padding: 15px 15px 30px 15px;
                 color: #fff;
                 .u-logo {
                     .size(70px);
@@ -262,39 +270,102 @@
         }
     }
 }
-
 @media screen and (max-width: @phone) {
-    .p-contact {
+    .p-page {
         .m-header {
-            zoom: 0.5;
+            .pt(30px);
+            .size(100%,auto);
+            min-height: 260px;
             .u-txt {
-                .pl(20px);
-            }
-            .u-desc{
-                width: 70%;
+                h2 {
+                    .fz(18px);
+                    .mb(0);
+                }
+                .u-desc {
+                    .fz(14px,2);
+                    max-width: 70%;
+                }
             }
         }
         .m-tabs {
             .mt(20px);
             .u-tab {
-                .fz(16px,36px);
-                .h(36px);
-            }
-        }
-        .m-info-box{
-            zoom: 0.5;
-            padding: 30px 20px;
-            .m-box{
-                .u-item{
-                    zoom: 0.7;
+                .fz(14px,30px);
+                .h(30px);
+                .u-tab {
+                    padding: 10px 20px;
                 }
             }
-            .m-map .u-map{
-                height: 360px;
+        }
+        .m-info-box {
+            padding: 20px 0;
+            h3 {
+                .fz(18px);
             }
         }
-        .m-form{
-            padding: 20px;
+    }
+}
+@media screen and (max-width: @phone) {
+    .p-contact {
+        .m-info-box {
+            .m-box {
+                flex-direction: column;
+                .u-item {
+                    padding: 20px 20px 20px 130px;
+                    width: 100%;
+                    background-position: 0 bottom;
+                    .x(right);
+                    h4 {
+                        .fz(18px);
+                    }
+                    .u-desc,
+                    .u-contact {
+                        .fz(14px);
+                        justify-content: flex-end;
+                    }
+                }
+            }
+            .m-map .u-map {
+                .h(360px);
+                .m-address {
+                    .size(300px,100px);
+                    .u-logo,
+                    .u-logo img {
+                        .size(50px);
+                    }
+                    .u-info {
+                        .u-title {
+                            .fz(14px);
+                        }
+                        .fz(12px);
+                    }
+                }
+            }
+            .m-form {
+                .pt(0);
+                gap: 20px;
+                .m-item {
+                    .u-input {
+                        .h(48px);
+                    }
+                    .u-label {
+                        .mb(0);
+                    }
+                    .u-label,
+                    .u-input,
+                    .u-input .u-desc,
+                    .u-input input,
+                    .u-textarea textarea {
+                        .fz(14px,48px);
+                    }
+                }
+            }
+            .m-btns {
+                .u-btn {
+                    .fz(14px,42px);
+                    .size(120px,42px);
+                }
+            }
         }
     }
 }

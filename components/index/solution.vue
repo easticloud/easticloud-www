@@ -148,13 +148,13 @@ export default {
     }
     .m-solution-content {
         .u-tabs {
-            .fz(12px);
-            justify-content: center;
+            .fz(14px);
             .u-tab {
                 padding: 10px 20px;
             }
         }
         .u-solution {
+            .mt(20px);
             flex-direction: column;
             align-items: center;
             .u-img {

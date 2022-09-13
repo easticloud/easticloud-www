@@ -123,7 +123,7 @@ export default {
 }
 @media screen and(max-width:@phone) {
     .m-production {
-        padding: 30px 0;
+        padding: 20px 0;
     }
     .m-production-content {
         .u-list {
@@ -131,7 +131,17 @@ export default {
             .flex;
             justify-content: center;
             .u-item {
-                zoom: 0.6;
+                .size(100%,200px);
+                padding: 20px;
+                .u-img {
+                    .size(30px);
+                }
+                .u-title {
+                    .fz(16px);
+                }
+                .u-desc {
+                    .fz(12px);
+                }
             }
         }
     }

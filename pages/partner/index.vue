@@ -1,5 +1,5 @@
 <template>
-    <div class="p-partner" id="top">
+    <div class="p-partner p-page" id="top">
         <common-header></common-header>
         <div class="m-header">
             <div class="u-txt wp">

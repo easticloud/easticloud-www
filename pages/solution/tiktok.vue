@@ -1,5 +1,5 @@
 <template>
-    <div class="p-solution" id="top">
+    <div class="p-solution p-page" id="top">
         <common-header class="theme-light"></common-header>
         <div class="m-header m-tiktok">
             <div class="wp">
@@ -44,27 +44,29 @@
         </div>
         <div class="m-box m-bg" id="tab2">
             <h3 class="wp">发展趋势</h3>
-            <div class="m-txt">
-                <span class="u-txt u-year u-year-1">2018</span>
-                <span class="u-txt u-year u-year-2">2019</span>
-                <span class="u-txt u-year u-year-3">2020</span>
-                <span class="u-txt u-year u-year-4">2021</span>
-                <span class="u-txt u-txt-1">
-                    <span>获得日本、泰国App Store年度</span>
-                    <span>热门免费应用榜单第一名</span>
-                </span>
-                <span class="u-txt u-txt-2">
-                    <span>全球下载量7.4亿次 </span>
-                    <span>荣获全球下载第一名</span>
-                </span>
-                <span class="u-txt u-txt-3">
-                    <span>全球下载量8.5亿 </span>
-                    <span>荣获全球下载榜第一名</span>
-                </span>
-                <span class="u-txt u-txt-4">
-                    <span>全球用户覆盖150个国家 </span>
-                    <span>全球最受欢迎的短视频App</span>
-                </span>
+            <div class="m-txt-box">
+                <div class="m-txt">
+                    <span class="u-txt u-year u-year-1">2018</span>
+                    <span class="u-txt u-year u-year-2">2019</span>
+                    <span class="u-txt u-year u-year-3">2020</span>
+                    <span class="u-txt u-year u-year-4">2021</span>
+                    <span class="u-txt u-txt-1">
+                        <span>获得日本、泰国App Store年度</span>
+                        <span>热门免费应用榜单第一名</span>
+                    </span>
+                    <span class="u-txt u-txt-2">
+                        <span>全球下载量7.4亿次 </span>
+                        <span>荣获全球下载第一名</span>
+                    </span>
+                    <span class="u-txt u-txt-3">
+                        <span>全球下载量8.5亿 </span>
+                        <span>荣获全球下载榜第一名</span>
+                    </span>
+                    <span class="u-txt u-txt-4">
+                        <span>全球用户覆盖150个国家 </span>
+                        <span>全球最受欢迎的短视频App</span>
+                    </span>
+                </div>
             </div>
         </div>
         <div class="m-box wp" id="tab3">

@@ -94,28 +94,45 @@ export default {
         color: @color;
     }
 }
+
 @media screen and (max-width: @phone) {
     .c-footer .wp {
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        padding: 30px 0;
+        padding: 30px 20px 20px 20px;
         .c-footer-link {
-            zoom: 0.5;
+            .fz(12px);
             .u-row .u-label {
-                .mr(20px);
+                .fz(12px);
+                .mr(6px);
             }
             .u-link {
-                .mr(20px);
+                .mr(6px);
             }
             .u-label + .u-value {
-                .mr(30px);
+                .mr(10px);
+            }
+            .u-row + .u-row {
+                .mt(20px);
+            }
+            .u-row {
+                .nobreak;
+                .u-value:last-child {
+                    .mr(0);
+                }
             }
         }
-        .c-footer-logo{
-            zoom: 0.4;
+    }
+    .c-footer-logo {
+        .flex;
+        .w(100%);
+        .mt(20px);
+        .fz(14px);
+        flex-direction: column;
+        align-items: center;
+        .u-logo {
+            .w(120px);
         }
     }
-    .c-footer-beian{
+    .c-footer-beian {
         padding: 10px 0;
         .fz(12px);
     }

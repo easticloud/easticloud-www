@@ -1,8 +1,8 @@
 <template>
-    <div class="p-production" id="top">
+    <div class="p-production p-page" id="top">
         <common-header class="theme-light"></common-header>
         <div class="wp">
-            <div class="m-production-box m-container">
+            <div class="m-header m-container">
                 <h2>Kubernetes 容器服务</h2>
                 <p class="u-desc">
                     容器引擎（DCloud Kubernetes

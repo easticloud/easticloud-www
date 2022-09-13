@@ -1,5 +1,5 @@
 <template>
-    <div class="p-solution" id="top">
+    <div class="p-solution p-page" id="top">
         <common-header class="theme-blue"></common-header>
         <div class="m-header m-mix">
             <div class="wp">

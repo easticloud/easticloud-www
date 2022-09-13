@@ -105,17 +105,34 @@ export default {
 }
 @media screen and (max-width: @phone) {
     .m-datacenter {
-        padding: 30px 0;
+        padding: 30px 20px;
         .m-datacenter-content {
-            padding:0 20px;
+            .pt(0);
             .m-area {
-                zoom: 0.5;
-                .u-area b {
-                    .mr(2px);
+                .u-area {
+                    .fz(12px);
+                    b {
+                        .db;
+                        .x;
+                        .fz(14px);
+                    }
                 }
             }
-            .m-info{
-                zoom: 0.5;
+            .u-map {
+                margin: 0;
+            }
+            .m-info {
+                width: 100%;
+                gap: 10px;
+                .u-info {
+                    .fz(14px);
+                    .u-title {
+                        .fz(16px);
+                        b {
+                            .fz(20px);
+                        }
+                    }
+                }
             }
         }
     }

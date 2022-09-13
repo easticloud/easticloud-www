@@ -1,8 +1,8 @@
 <template>
-    <div class="p-production" id="top">
+    <div class="p-production p-page" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
-            <div class="m-production-box m-international">
+            <div class="m-header m-international">
                 <h2>TikTok 一站式营销解决方案</h2>
                 <p class="u-desc u-first">低成本启动 亿级流量引爆品牌海外口碑</p>
                 <p class="u-desc">快人一步抢占营销红利 持续获取高质询盘</p>
@@ -12,8 +12,8 @@
                 <input class="u-input" type="txt" v-model="phone" placeholder="请输入手机号" />
                 <span class="u-btn" @click="omSubmit">获取方案</span>
             </div>
-            <div class="m-info">
-                <h3>覆盖TikTok全生态服务 让品牌和产品一夜爆红</h3>
+            <div class="m-info-box">
+                <h3><span>覆盖TikTok全生态服务</span> <span>让品牌和产品一夜爆红</span></h3>
                 <div class="m-box">
                     <div class="m-item">
                         <img class="u-img" src="../../static/images/index/production/1.png" alt="定制化品牌全案" />
@@ -47,8 +47,8 @@
                     </div>
                 </div>
             </div>
-            <div class="m-info">
-                <h3>定向触达全球精准受众 量身定制专业海外推广方案</h3>
+            <div class="m-info-box">
+                <h3><span>定向触达全球精准受众</span> <span>量身定制专业海外推广方案</span></h3>
                 <div class="m-box">
                     <div class="m-item">
                         <img

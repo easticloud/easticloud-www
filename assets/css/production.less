@@ -7,9 +7,12 @@
         max-width: 1200px;
         .auto(x);
     }
-    .m-production-box {
+    .m-header {
         .mt(20px);
         padding: 60px 380px 60px 100px;
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-color: #fff;
         h2 {
             .fz(36px,2);
         }
@@ -33,16 +36,16 @@
             }
         }
         &.m-container {
-            background: url(../../static/images/index/production/container.png) center right #fff no-repeat;
+            background-image: url(../../static/images/index/production/container.png);
         }
         &.m-servers {
-            background: url(../../static/images/index/production/servers.png) center right #fff no-repeat;
+            background-image: url(../../static/images/index/production/servers.png);
         }
         &.m-compute {
-            background: url(../../static/images/index/production/compute.png) center right #fff no-repeat;
+            background-image: url(../../static/images/index/production/compute.png);
         }
         &.m-international {
-            background: url(../../static/images/index/production/tiktok.png) center center #fff no-repeat;
+            background-image: url(../../static/images/index/production/tiktok.png);
             .u-desc {
                 .pt(30px);
                 &.u-first {
@@ -165,7 +168,7 @@
             }
         }
     }
-    .m-info {
+    .m-info-box {
         .pb(40px);
         h3 {
             .fz(36px,160px);
@@ -196,62 +199,75 @@
         }
     }
 }
-
-@media screen and(max-width:@phone) {
-    .p-production {
-        .wp {
-            max-width: 100%;
-        }
-        .m-production-box {
-            zoom: 0.5;
+@media screen and (max-width: @phone) {
+    .p-page .wp {
+        .m-header {
+            .size(100%,auto);
+            .flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-position: center;
+            &.m-international {
+                background-position: center left;
+                min-height: 100px;
+                .u-desc {
+                    .pt(10px);
+                }
+            }
             h2 {
                 .fz(18px);
+                .mb(0);
             }
             .u-desc {
-                .fz(14px);
+                .fz(12px,2);
+            }
+            .m-btn {
+                .flex;
             }
         }
         .m-tabs {
             .mt(20px);
             .u-tab {
-                .fz(16px,36px);
-                .h(36px);
-            }
-        }
-        .m-info-box {
-            zoom: 0.5;
-            padding: 20px 20px;
-            .m-table{
-                span{
-                    .fz(14px);
+                .fz(14px,30px);
+                .h(30px);
+                .u-tab {
+                    padding: 10px 20px;
                 }
             }
         }
-        .m-getting {
-            .flex;
-            .pb(20px);
-            flex-wrap: wrap;
-            .u-input {
-                .size(40%,32px);
-                .fz(14px,32px);
-            }
-            .u-btn {
-                .fz(16px);
-                .size(220px,32px);
-                .fz(14px,32px);
-            }
-        }
-        .m-info {
-            zoom: 0.5;
+        .m-info-box {
+            padding: 20px 0;
             h3 {
-                .fz(16px,80px);
+                .fz(18px,2);
+                padding: 20px 0;
+                .bold;
+                .flex;
+                flex-direction: column;
+                i {
+                    .fz(18px);
+                }
+            }
+            .u-section {
+                strong {
+                    .fz(16px);
+                }
+                span {
+                    .fz(14px);
+                }
+                .u-box {
+                    .w(100%);
+                    overflow: auto;
+                }
             }
             .m-box {
-                justify-content: space-around;
+                flex-direction: column;
+                gap: 20px;
                 .m-item {
-                    .u-img {
-                        .size(30px);
-                    }
+                    justify-content: center;
+                    .w(100%);
                     .u-txt {
                         .fz(14px);
                         .u-title {
@@ -259,6 +275,19 @@
                         }
                     }
                 }
+            }
+        }
+        .m-getting {
+            flex-direction: column;
+            align-items: center;
+            .u-input {
+                .lh(36px);
+                .fz(14px,36px);
+                .size(320px,36px);
+            }
+            .u-btn{
+                .size(220px,40px);
+                .fz(14px,40px);
             }
         }
     }

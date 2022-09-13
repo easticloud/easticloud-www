@@ -1,5 +1,5 @@
 <template>
-    <div class="p-contact">
+    <div class="p-contact p-page">
         <common-header></common-header>
         <div class="m-header">
             <div class="u-txt wp">

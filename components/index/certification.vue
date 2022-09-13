@@ -78,24 +78,21 @@ export default {
     .m-certification {
         padding: 30px 0;
         .m-certification-content {
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
+            flex-direction: column;
             .u-item {
-                .size(45%,170px);
+                .size(100%,110px);
+                .flex;
+                gap: 30px;
+                align-items: center;
                 .u-item__img {
-                    .db;
-                    .size(100px);
-                    .auto(x);
-                    img {
-                        max-height: 100%;
-                    }
+                    .flex;
+                    align-items: center;
+                    width: 80px;
                 }
                 .u-item__text {
                     .flex;
-                    flex-direction: column;
-                    .mt(10px);
                     .fz(14px,2);
+                    flex-direction: column;
                 }
             }
         }

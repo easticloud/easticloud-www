@@ -1,8 +1,8 @@
 <template>
-    <div class="p-production" id="top">
+    <div class="p-production p-page" id="top">
         <div class="wp">
             <common-header class="theme-light"></common-header>
-            <div class="m-production-box m-compute">
+            <div class="m-header m-compute">
                 <h2>高性能计算 EHPC</h2>
                 <p class="u-desc">
                     基于东云云计算的IaaS基础架构，以PaaS结构为基础，为您打造安全、弹性、快捷的高效云上高性能计算平台，能支持计算资源的弹性定制，降低成本，提高资源利用率，具有极大的灵活性。

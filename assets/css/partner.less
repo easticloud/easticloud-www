@@ -139,26 +139,80 @@
         }
     }
 }
-@media screen and(max-width:@phone) {
-    .p-partner {
+@media screen and (max-width: @phone) {
+    .p-page {
         .m-header {
-            zoom: 0.5;
+            .pt(30px);
+            .size(100%,auto);
+            min-height: 260px;
             .u-txt {
-                .pl(20px);
+                h2 {
+                    .fz(18px);
+                    .mb(0);
+                }
+                .u-desc {
+                    .fz(14px,2);
+                    max-width: 70%;
+                }
             }
         }
         .m-tabs {
             .mt(20px);
             .u-tab {
-                .fz(16px,36px);
-                .h(36px);
+                .fz(14px,30px);
+                .h(30px);
+                .u-tab {
+                    padding: 10px 20px;
+                }
             }
         }
         .m-info-box {
-            padding: 50px 20px;
-            zoom: 0.5;
-            .m-content .m-item .u-info {
-                .fz(14px,2);
+            padding: 20px 0;
+            h3 {
+                .fz(18px);
+            }
+        }
+    }
+}
+@media screen and(max-width:@phone) {
+    .p-partner {
+        .m-info-box { 
+            .m-content .m-item {
+                .w(100%);
+                min-height: 200px;
+                .mb(20px);
+                .h(auto);
+                .u-title {
+                    .u-img {
+                        .size(60px);
+                    }
+                    .u-name {
+                        .fz(16px);
+                        .u-desc {
+                            .fz(14px);
+                        }
+                    }
+                }
+                .u-info {
+                    .fz(14px,2);
+                    .h(auto);
+                    .pb(10px);
+                }
+                .u-bottom {
+                    padding: 20px;
+                    .h(auto);
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    .u-icon {
+                        gap: 10px;
+                        .u-img {
+                            .size(14px);
+                            img {
+                                .size(14px);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
