@@ -105,7 +105,7 @@ export default {
 }
 @media screen and (max-width: @phone) {
     .m-datacenter {
-        padding: 30px 20px;
+        padding: 30px 0;
         .m-datacenter-content {
             .pt(0);
             .m-area {
