@@ -1,0 +1,292 @@
+.c-header {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    .w(100%);
+
+    .wp {
+        .h(90px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.c-header-left {
+    display: flex;
+    align-items: center;
+    .u-menu {
+        .none;
+    }
+}
+
+.c-header-logo {
+    .mr(40px);
+    // .u-logo {
+    //     .size(195px,43px);
+    // }
+}
+
+.c-header-nav {
+    display: flex;
+    gap: 20px;
+    .pt(10px);
+    .m-link {
+        position: relative;
+        height: auto;
+        .u-link {
+            .db;
+            .fz(16px);
+            .x;
+            padding: 10px;
+
+            &:hover,
+            &.active {
+                &::after {
+                    content: "";
+                    .pa;
+                    .lb(0, -5px);
+                    .size(100%, 2px);
+                    .r(2px);
+                }
+            }
+        }
+    }
+}
+
+.u-subnav {
+    .pa;
+    .lt(0,34px);
+    .pt(12px);
+    .none;
+    .u-arr {
+        .pa;
+        .lt(2em,0);
+        border-width: 6px;
+        border-style: solid;
+        border-color: transparent transparent #fff transparent;
+    }
+    .u-box {
+        .flex;
+        .r(6px);
+        flex-direction: column;
+        padding: 15px 0;
+        background-color: #fff;
+        white-space: nowrap;
+        .u-child {
+            .mb(10px);
+            .db;
+            .fz(16px);
+            color: #333 !important;
+            padding: 0 20px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.c-header-right {
+    .flex;
+    gap: 20px;
+
+    .u-btn {
+        .size(32px);
+        .db;
+        .x;
+        .lh(32px);
+        .r(50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            .db;
+            .size(18px);
+        }
+    }
+}
+
+.c-header-theme(@color, @hover, @link) {
+    * {
+        transition: 0.1s ease-in-out;
+    }
+
+    .c-header-nav {
+        .m-link {
+            &.children {
+                .u-link {
+                    .color(@color, @hover);
+                }
+                .u-arr {
+                    .none;
+                }
+                &:hover {
+                    .u-subnav {
+                        .db;
+                        .u-arr {
+                            border-color: transparent transparent @hover transparent;
+                        }
+                        .u-box {
+                            background-color: @hover;
+                            .u-child {
+                                color: @link !important;
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:not(.children) {
+                .u-link {
+                    .color(@color);
+                    &:hover {
+                        color: @hover;
+                        &::after {
+                            background-color: @hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .c-header-right {
+        .u-btn {
+            color: @color;
+            border: 1px solid @color;
+
+            &:hover {
+                color: @hover;
+            }
+        }
+    }
+}
+
+.c-header.theme-dark {
+    @color: rgba(255, 255, 255, 0.8);
+    @link: #333;
+    @hover: #fff;
+    .c-header-theme(@color, @hover, @link);
+}
+
+.c-header.theme-light {
+    @color: rgba(0, 0, 0, 0.8);
+    @hover: #000;
+    @link: #fff;
+    .c-header-theme(@color, @hover, @link);
+}
+
+.c-header.theme-blue {
+    @color: rgba(0, 0, 0, 0.8);
+    @link: #fff;
+    @hover: #4162eb;
+    .c-header-theme(@color, @hover, @link);
+}
+@media screen and (max-width: @phone) {
+    .c-header .wp {
+        padding: 0 10px;
+        .h(46px);
+    }
+    .c-header-logo {
+        .mr(20px);
+        .u-svg {
+            .size(80px,36px);
+        }
+    }
+    .c-header-left {
+        .w(100%);
+        justify-content: space-between;
+        .u-menu {
+            .db;
+            .u-svg {
+                .size(20px);
+            }
+        }
+        .c-header-nav {
+            .none;
+        }
+    }
+    .c-header.theme-blue .c-header-nav .m-link.children:hover .u-subnav .u-box {
+        background-color: transparent;
+    }
+    .c-header .wp.c-header-show {
+        .pf;
+        .full;
+        .lt(0);
+        .rb(0);
+        .z(99);
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: #fff;
+        .c-header-left {
+            flex-wrap: wrap;
+            .c-header-nav {
+                border-top: 1px solid #ddd;
+                .w(100%);
+                .flex;
+                flex-direction: column;
+                .m-link {
+                    position: relative;
+                    .flex;
+                    flex-direction: column;
+                    margin: 0 20px;
+                    &.children {
+                        .u-arr {
+                            .pa;
+                            .db;
+                            .rt(5px,10px);
+                            .size(16px);
+                            .u-svg {
+                                .size(16px);
+                            }
+                            &.flip {
+                                transform: rotateX(180deg);
+                            }
+                        }
+                    }
+                    .u-link {
+                        .db;
+                        .x(left);
+                        .fz(14px);
+                        border-bottom: 1px solid #eee;
+                        .color(#374567);
+                        &:hover {
+                            &::after {
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                    .u-subnav.show {
+                        .ps;
+                        .db;
+                        .pt(0);
+                        .u-arr {
+                            .none;
+                        }
+                        .u-box {
+                            .r(0);
+                            padding: 0;
+                            margin: 0 20px;
+                            border-bottom: 1px solid #eee;
+                            .u-child {
+                                padding: 10px;
+                                .fz(14px);
+                                .mb(0);
+                                .color(#778ba6) !important;
+                                border-bottom: 1px solid #eee;
+                                &:last-child {
+                                    border: 0;
+                                }
+                                &::before {
+                                    content: "•";
+                                    .mr(10px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,25 +1,48 @@
 <template>
     <div class="c-header" :class="'theme-' + kv_mode">
-        <div class="wp">
+        <div class="wp" :class="{ 'c-header-show': show }">
             <div class="c-header-left">
                 <a class="c-header-logo" href="/">
                     <component class="u-svg" :is="require(`../assets/img/logo.svg?inline`)" :fill="fill_color" />
                 </a>
+                <span class="u-menu" @click="showMenu">
+                    <component class="u-svg" :is="require(`../assets/img/menu.svg?inline`)" :fill="fill_color" />
+                </span>
+
                 <div class="c-header-nav">
-                    <div class="u-item" v-for="(item, i) in data" :key="i">
-                        <template v-if="item.children && item.children.length">
-                            <el-dropdown>
-                                <nuxt-link class="u-link" :to="item.href">
-                                    {{ item.label }}
-                                </nuxt-link>
-                                <el-dropdown-menu slot="dropdown" class="c-header-subnav">
-                                    <el-dropdown-item v-for="(child, c) in item.children" :key="c">
-                                        <nuxt-link class="u-child" :to="child.href">{{ child.label }}</nuxt-link>
-                                    </el-dropdown-item>
-                                </el-dropdown-menu>
-                            </el-dropdown>
-                        </template>
-                        <nuxt-link class="u-link" :to="item.href" v-else>{{ item.label }}</nuxt-link>
+                    <div
+                        class="m-link"
+                        v-for="(item, i) in data"
+                        :key="i"
+                        :class="{ children: item.children && item.children.length }"
+                        @click="toShow(item)"
+                    >
+                        <nuxt-link class="u-link" :to="item.href">
+                            {{ item.label }}
+                        </nuxt-link>
+                        <span class="u-arr" v-if="item.children" :class="item.label == label ? 'flip' : ''">
+                            <component
+                                class="u-svg"
+                                :is="require(`../assets/img/arrow.svg?inline`)"
+                                :fill="fill_color"
+                            />
+                        </span>
+                        <div
+                            class="u-subnav"
+                            :class="item.label == label ? 'show' : ''"
+                            v-if="item.children && item.children.length"
+                        >
+                            <span class="u-arr"></span>
+                            <div class="u-box" @click="toShow(item)">
+                                <nuxt-link
+                                    class="u-child"
+                                    v-for="(child, c) in item.children"
+                                    :key="c"
+                                    :to="child.href"
+                                    >{{ child.label }}</nuxt-link
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,6 +60,8 @@
 export default {
     data() {
         return {
+            show: false,
+            label: "",
             data: [
                 {
                     label: "产品服务",
@@ -67,7 +92,7 @@ export default {
     },
     computed: {
         kv_mode: function () {
-            return this.$store.state.home.kv_mode;
+            return this.show ? "blue" : this.$store.state.home.kv_mode;
         },
         fill_color: function () {
             const mode = {
@@ -76,6 +101,21 @@ export default {
                 blue: "#4162EB",
             };
             return mode[this.kv_mode];
+        },
+        hide() {},
+    },
+    methods: {
+        showMenu() {
+            this.show = true;
+        },
+        toShow(item) {
+            if (!this.show) return;
+            if (item.children) {
+                this.label = item.label;
+            } else {
+                this.show = false;
+                this.$router.push({ path: item.href });
+            }
         },
     },
     watch: {
@@ -91,185 +131,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-.c-header {
-    position: absolute;
-    top: 0;
-    z-index: 100;
-    .w(100%);
-
-    .wp {
-        .h(90px);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-.c-header-left {
-    display: flex;
-    align-items: center;
-}
-
-.c-header-logo {
-    .mr(40px);
-    // .u-logo {
-    //     .size(195px,43px);
-    // }
-}
-
-.c-header-nav {
-    display: flex;
-    margin-top: 10px;
-
-    .u-link {
-        .pr;
-        .fz(16px);
-        margin-right: 20px;
-        padding: 10px;
-
-        &:hover,
-        &.active {
-            &::after {
-                content: "";
-                .pa;
-                .lb(0, -5px);
-                .size(100%, 2px);
-                .r(2px);
-            }
-        }
-
-        // &:hover .u-children {
-        //     .flex;
-        // }
-    }
-}
-
-.c-header-subnav {
-    // .pa;
-    // margin-top: 25px;
-    // margin-left: -10px;
-    // .none;
-    // padding: 15px 30px;
-    // background-color: #fff;
-    // .r(6px);
-    // white-space: nowrap;
-
-    .el-dropdown-menu__item {
-        padding: 0;
-    }
-
-    a {
-        color: #333 !important;
-        padding: 0 20px;
-        .db;
-        // margin-right: 30px;
-        // &:last-child {
-        //     margin-right: 0;
-        // }
-    }
-}
-
-.c-header-right {
-    .flex;
-    gap: 20px;
-
-    .u-btn {
-        .size(32px);
-        .db;
-        .x;
-        .lh(32px);
-        .r(50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-            .db;
-            .size(18px);
-        }
-    }
-}
-
-.c-header-theme(@color, @hover) {
-    * {
-        transition: 0.1s ease-in-out;
-    }
-
-    .c-header-nav {
-        .u-link {
-            .color(@color);
-
-            &:hover {
-                color: @hover;
-
-                .u-child {
-                    color: @hover;
-
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-
-                &::after {
-                    background-color: @hover;
-                }
-            }
-        }
-    }
-
-    .c-header-right {
-        .u-btn {
-            color: @color;
-            border: 1px solid @color;
-
-            &:hover {
-                color: @hover;
-            }
-        }
-    }
-}
-
-.c-header.theme-dark {
-    @color: rgba(255, 255, 255, 0.8);
-    @hover: #fff;
-    .c-header-theme(@color, @hover);
-}
-
-.c-header.theme-light {
-    @color: rgba(0, 0, 0, 0.8);
-    @hover: #000;
-    .c-header-theme(@color, @hover);
-}
-
-.c-header.theme-blue {
-    @color: rgba(0, 0, 0, 0.8);
-    @hover: #4162eb;
-    .c-header-theme(@color, @hover);
-}
-@media screen and (max-width: @phone) {
-    .c-header .wp {
-        padding:0 10px;
-        .h(46px);
-    }
-    .c-header-logo {
-        .mr(20px);
-        .u-svg {
-            .size(80px,36px);
-        }
-    }
-    .c-header-nav {
-        .mt(0);
-        .u-item {
-            flex-shrink: 0;
-            .u-link {
-                .fz(12px);
-                padding: 10px 0;
-                .mr(10px);
-            }
-        }
-    }
-    .c-header-subnav .u-child{
-        .fz(12px);
-    }
-}
+@import "~@/assets/css/header.less";
 </style>
