@@ -20,7 +20,7 @@
                         <nuxt-link class="u-link" :to="item.href">
                             {{ item.label }}
                         </nuxt-link>
-                        <span class="u-arr" v-if="item.children" :class="item.label == label ? 'flip' : ''">
+                        <span class="u-arrow" v-if="item.children" :class="item.label == label ? 'flip' : ''">
                             <component
                                 class="u-svg"
                                 :is="require(`../assets/img/arrow.svg?inline`)"
@@ -106,7 +106,8 @@ export default {
     },
     methods: {
         showMenu() {
-            this.show = true;
+            this.show = !this.show;
+            if (!this.show) this.label = "";
         },
         toShow(item) {
             if (!this.show) return;
