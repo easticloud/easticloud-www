@@ -1,0 +1,28 @@
+.wp {
+    width: 1200px;
+    .auto(x);
+    .color(#374567);
+    padding:0 20px;
+}
+@media screen and (max-width: @phone) {
+    .wp {
+        width: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+body{
+    min-width: 1280px;
+}
+html{
+    overflow-x:auto;
+}
+@media screen and (max-width:@phone){
+    body{
+        min-width: auto;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+
