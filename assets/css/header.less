@@ -6,6 +6,7 @@
 
     .wp {
         .h(90px);
+        .auto(x);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -39,6 +40,9 @@
             .fz(16px);
             .x;
             padding: 10px;
+            .u-txt {
+                .db;
+            }
 
             &:hover,
             &.active {
@@ -189,6 +193,7 @@
     }
     .c-header-logo {
         .mr(20px);
+        .mt(6px);
         .u-svg {
             .size(80px,36px);
         }
@@ -196,8 +201,10 @@
     .c-header-left {
         .w(100%);
         justify-content: space-between;
+
         .u-menu {
             .db;
+            .mt(8px);
             .u-svg {
                 .size(20px);
             }
@@ -256,13 +263,14 @@
                             }
                         }
                     }
+                    .u-subnav .u-arr {
+                        .none;
+                    }
                     .u-subnav.show {
                         .ps;
                         .db;
                         .pt(0);
-                        .u-arr {
-                            .none;
-                        }
+
                         .u-box {
                             .r(0);
                             padding: 0;

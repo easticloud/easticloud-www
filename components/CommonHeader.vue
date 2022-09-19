@@ -6,7 +6,18 @@
                     <component class="u-svg" :is="require(`../assets/img/logo.svg?inline`)" :fill="fill_color" />
                 </a>
                 <span class="u-menu" @click="showMenu">
-                    <component class="u-svg" :is="require(`../assets/img/menu.svg?inline`)" :fill="fill_color" />
+                    <component
+                        v-if="!show"
+                        class="u-svg"
+                        :is="require(`../assets/img/menu.svg?inline`)"
+                        :fill="fill_color"
+                    />
+                    <component
+                        v-else
+                        class="u-svg"
+                        :is="require(`../assets/img/close.svg?inline`)"
+                        :fill="fill_color"
+                    />
                 </span>
 
                 <div class="c-header-nav">
@@ -15,10 +26,9 @@
                         v-for="(item, i) in data"
                         :key="i"
                         :class="{ children: item.children && item.children.length }"
-                        @click="toShow(item)"
                     >
                         <nuxt-link class="u-link" :to="item.href">
-                            {{ item.label }}
+                            <span class="u-txt" @click="toShow(item)">{{ item.label }}</span>
                         </nuxt-link>
                         <span class="u-arrow" v-if="item.children" :class="item.label == label ? 'flip' : ''">
                             <component
@@ -33,13 +43,14 @@
                             v-if="item.children && item.children.length"
                         >
                             <span class="u-arr"></span>
-                            <div class="u-box" @click="toShow(item)">
+                            <div class="u-box">
                                 <nuxt-link
                                     class="u-child"
                                     v-for="(child, c) in item.children"
                                     :key="c"
                                     :to="child.href"
-                                    >{{ child.label }}</nuxt-link
+                                >
+                                    <span class="u-txt" @click="toShow(item)">{{ child.label }}</span></nuxt-link
                                 >
                             </div>
                         </div>
@@ -112,7 +123,7 @@ export default {
         toShow(item) {
             if (!this.show) return;
             if (item.children) {
-                this.label = item.label;
+                this.label = this.label == item.label ? "" : item.label;
             } else {
                 this.show = false;
                 this.$router.push({ path: item.href });
