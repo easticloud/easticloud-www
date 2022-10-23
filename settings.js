@@ -10,7 +10,7 @@ module.exports = {
 
     // API
     API:{
-        cms: "https://cms.easticloud.iruxu.com/",
+        cms: "https://cms.easticloud.com/",
     }
 
 
