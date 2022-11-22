@@ -21,7 +21,9 @@
             </div>
         </div>
         <div class="c-footer-beian">
-            备案序号： <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备20035792号</a>
+            <span>备案序号： <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备20035792号</a></span>
+            <span>版权所有 江苏东云互联网络科技有限公司</span>
+            
         </div>
     </div>
 </template>
@@ -86,9 +88,12 @@ export default {
 }
 
 .c-footer-beian {
+    display: flex;
+    flex-direction: column;
     color: @color;
     border-top: 1px solid #1f2748;
     padding: 40px 0;
+    gap:5px;
     .x;
     a {
         color: @color;
