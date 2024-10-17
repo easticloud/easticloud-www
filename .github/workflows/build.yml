@@ -24,10 +24,10 @@ jobs:
           CLEAN: true
           # CLEAN_EXCLUDE: '["css", "js"]'
 
-    #   - name: OSS
-    #     uses: manyuanrong/setup-ossutil@v2.0
-    #     with:
-    #       endpoint: "oss-cn-hangzhou.aliyuncs.com"
-    #       access-key-id: ${{secrets.AccessKey_ID}}
-    #       access-key-secret: ${{secrets.Access_Key_Secret}}
-    #   - run: ossutil cp -rf .output/public oss://jx3box/easticloud/www
+      - name: OSS
+        uses: manyuanrong/setup-ossutil@v2.0
+        with:
+          endpoint: "oss-cn-hangzhou.aliyuncs.com"
+          access-key-id: ${{secrets.AccessKey_ID}}
+          access-key-secret: ${{secrets.Access_Key_Secret}}
+      - run: ossutil cp -rf .output/public oss://easticloud
