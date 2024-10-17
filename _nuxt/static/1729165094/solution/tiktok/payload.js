@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/solution/tiktok", {data:[{}],fetch:{},mutations:[["home\u002FsetKVMode","blue"]]});
