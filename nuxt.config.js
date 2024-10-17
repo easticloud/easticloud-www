@@ -47,6 +47,4 @@ export default {
         extractCSS: true,
         transpile: [/^element-ui/],
     },
-
-    target: "static",
 };
