@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/certification", {data:[{}],fetch:{},mutations:[["home\u002FsetKVMode","blue"]]});

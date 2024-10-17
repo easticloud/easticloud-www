@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/production/servers", {data:[{}],fetch:{},mutations:[["home\u002FsetKVMode","blue"]]});

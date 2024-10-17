@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/contact", {data:[{}],fetch:{},mutations:[["home\u002FsetKVMode","blue"]]});
