@@ -7,6 +7,7 @@ module.exports = {
 
     // URL
     __cdn: "https://console.cnyixun.com/easticloud/",
+    __img: "https://img.easticloud.com/",
 
     // API
     API:{

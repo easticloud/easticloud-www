@@ -15,9 +15,9 @@ export default {
     data() {
         return {
             data: [
-                { href: "/solution/mix", target: "_blank", src: getKV("kv-1.png"), mode: "dark" },
-                { href: "/production/servers", target: "_blank", src: getKV("kv-2.png"), mode: "dark" },
-                { href: "/production/international", target: "_blank", src: getKV("kv-3.png"), mode: "light" },
+                { href: "/solution/mix", target: "_blank", src: getKV("kv-2.png"), mode: "dark" },
+                { href: "/production/servers", target: "_blank", src: getKV("kv-3.png"), mode: "dark" },
+                { href: "/production/international", target: "_blank", src: getKV("kv-1.png"), mode: "light" },
             ],
         };
     },
