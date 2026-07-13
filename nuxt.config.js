@@ -1,5 +1,9 @@
-import { Description, Title, API } from "./settings";
+import { Description, Title, API, VITE_AMAP_KEY } from "./settings";
 export default {
+    env: {
+        VITE_AMAP_KEY,
+    },
+
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: Title,

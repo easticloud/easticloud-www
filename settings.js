@@ -11,7 +11,10 @@ module.exports = {
     // API
     API:{
         cms: "https://cms.easticloud.com/",
-    }
+    },
+
+    // MAP
+    VITE_AMAP_KEY: "ZTn0hcEN9Bl8E5JR4NfeQJd",
 
 
 
